@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<object name="bulletin"
+   meta_type="Dexterity FTI"
+   i18n:domain="shiji.content"
+   xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+
+  <!-- Basic metadata -->
+  <property name="title" i18n:translate="">Bulletin</property>
+  <property name="description"
+   i18n:translate="">ShiJi Bulletin Type</property>
+  <property name="icon_expr">string:${portal_url}/document_icon.png</property>
+  <property name="factory">shiji.content.bulletin</property>
+  <property name="global_allow">True</property>
+  <property name="filter_content_types">False</property>  
+  <property name="allowed_content_types" />
+  <property name="allow_discussion">False</property>
+
+  <!-- schema and class used for content items -->
+  <property name="schema">shiji.content.bulletin.IBulletin</property> 
+  <property name="klass">shiji.content.bulletin.Bulletin</property>
+
+  <property name="behaviors">
+    <element value="plone.app.dexterity.behaviors.filename.INameFromFileName" />
+    <element value="plone.app.dexterity.behaviors.metadata.IBasic" />
+    <element value="plone.app.dexterity.behaviors.metadata.ICategorization" />
+    <element value="plone.app.dexterity.behaviors.metadata.IPublication" />
+    <element value="plone.app.dexterity.behaviors.metadata.IOwnership" />
+    <element value="plone.app.dexterity.behaviors.discussion.IAllowDiscussion" />
+    <element value="plone.app.dexterity.behaviors.exclfromnav.IExcludeFromNavigation" />
+    <element value="plone.app.relationfield.behavior.IRelatedItems" />
+    <!-- IReferenceable might not be available, but it will not break. -->
+    <element value="plone.app.referenceablebehavior.referenceable.IReferenceable" />
+  </property>
+
+  <!-- View information -->
+  <property name="link_target"></property>
+  <property name="immediate_view">view</property>
+  <property name="default_view">view</property>
+  <property name="view_methods">
+    <element value="view" />
+  </property>
+  <property name="default_view_fallback">False</property>
+  <property name="add_permission">cmf.AddPortalContent</property>
+
+  <!-- Method aliases -->
+  <alias from="(Default)" to="(dynamic view)" />
+  <alias from="view" to="(selected layout)" />
+  <alias from="edit" to="@@edit" />
+  <alias from="sharing" to="@@sharing" />
+
+  <!-- Actions -->
+  <action title="View" action_id="view" category="object" condition_expr=""
+    url_expr="string:${object_url}/" visible="True">
+    <permission value="View" />
+  </action>
+  <action title="Edit" action_id="edit" category="object" condition_expr=""
+    url_expr="string:${object_url}/edit" visible="True">
+    <permission value="Modify portal content" />
+  </action>
+
+</object>
