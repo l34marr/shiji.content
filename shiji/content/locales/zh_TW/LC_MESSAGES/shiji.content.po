@@ -1,0 +1,37 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: shiji.content\n"
+"POT-Creation-Date: 2013-12-19 08:33+0000\n"
+"PO-Revision-Date: 2013-12-19 16:34+0800\n"
+"Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
+"Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: zh-tw\n"
+"Language-Name: Traditional Chinese\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: shiji.content\n"
+
+#: ./proposal.py:36
+msgid "Body"
+msgstr "說明內容"
+
+#: ./proposal.py:31
+msgid "Description"
+msgstr "摘要描述"
+
+#: ./profiles/default/types/Proposal.xml
+msgid "Proposal"
+msgstr "建議"
+
+#: ./profiles/default/types/Proposal.xml
+msgid "ShiJi Proposal Type"
+msgstr "建議事項"
+
+#: ./proposal.py:27
+#: ./proposal_templates/view.pt:14
+msgid "Title"
+msgstr ""
+
