@@ -6,8 +6,17 @@ from plone.app.contenttypes.interfaces import IFile
 from zope import schema
 from plone.app.textfield import RichText
 from plone.namedfile.field import NamedBlobFile
+from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
 
 from shiji.content import MessageFactory as _
+
+duty = SimpleVocabulary([
+    SimpleTerm(value=u'gw', title=_(u'GW')),
+    SimpleTerm(value=u'sw', title=_(u'SW')),
+    SimpleTerm(value=u'wk', title=_(u'WK')),
+    SimpleTerm(value=u'hb', title=_(u'HB')),
+    SimpleTerm(value=u'aq', title=_(u'AQ'))
+])
 
 
 # Interface class; used to define content-type schema.
@@ -24,13 +33,45 @@ class IBulletin(form.Schema):
     
     #form.model("models/bulletin.xml")
 
+    start = schema.Date(
+        title=_(u"Start Date"),
+        required=False,
+    )
+
+    end = schema.Date(
+        title=_(u"End Date"),
+        required=False,
+    )
+
+    duty = schema.List(
+        title=_(u"Duty"),
+        required=False,
+        value_type=schema.Choice(
+        vocabulary=duty,
+        )
+    )
+
+    text = RichText(
+        title=_(u"Text"),
+        required=False,
+    )
+
+    note = RichText(
+        title=_(u"Note"),
+        required=False,
+    )
+
+    searchable = schema.Text(
+        title=_(u"Searchable Text"),
+        required=False,
+    )
+
     form.primary('file')
     file = NamedBlobFile(
         title=_(u"File"),
         required=False,
     )
-
-
+    
 # Custom content-type class; objects created for this content type will
 # be instances of this class. Use this class to add content-type specific
 # methods and properties. Put methods that are mainly useful for rendering
