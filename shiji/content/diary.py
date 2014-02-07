@@ -48,13 +48,23 @@ class IDiary(form.Schema):
         )
     )
 
-    text = RichText(
-        title=_(u"Text"),
+    logistics = RichText(
+        title=_(u"Logistics"),
         required=False,
     )
 
-    contractor = RichText(
-        title=_(u"Contractor"),
+    security = RichText(
+        title=_(u"Security"),
+        required=False,
+    )
+
+    maintain = RichText(
+        title=_(u"Maintain"),
+        required=False,
+    )
+
+    hallwork = RichText(
+        title=_(u"HallWork"),
         required=False,
     )
 
@@ -65,6 +75,11 @@ class IDiary(form.Schema):
 
     comment = RichText(
         title=_(u"Comment"),
+        required=False,
+    )
+
+    residence = RichText(
+        title=_(u"Residence"),
         required=False,
     )
 

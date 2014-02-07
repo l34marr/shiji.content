@@ -20,14 +20,24 @@
   <span tal:replace="context/duty" />
 </div>
 
-<div tal:condition="context/text">
-  <tal:field i18n:translate="">Text</tal:field>:
-  <span tal:replace="structure context/text/output" />
+<div tal:condition="context/logistics">
+  <tal:field i18n:translate="">Logistics</tal:field>:
+  <span tal:replace="structure context/logistics/output" />
 </div>
 
-<div tal:condition="context/contractor">
-  <tal:field i18n:translate="">Contractor</tal:field>:
-  <span tal:replace="structure context/contractor/output" />
+<div tal:condition="context/security">
+  <tal:field i18n:translate="">Security</tal:field>:
+  <span tal:replace="structure context/security/output" />
+</div>
+
+<div tal:condition="context/maintain">
+  <tal:field i18n:translate="">Maintain</tal:field>:
+  <span tal:replace="structure context/maintain/output" />
+</div>
+
+<div tal:condition="context/hallwork">
+  <tal:field i18n:translate="">HallWork</tal:field>:
+  <span tal:replace="structure context/hallwork/output" />
 </div>
 
 <div tal:condition="context/absence">
@@ -38,6 +48,11 @@
 <div tal:condition="context/comment">
   <tal:field i18n:translate="">Comment</tal:field>:
   <span tal:replace="structure context/comment/output" />
+</div>
+
+<div tal:condition="context/residence">
+  <tal:field i18n:translate="">Residence</tal:field>:
+  <span tal:replace="structure context/residence/output" />
 </div>
 
 <div tal:condition="context/note">

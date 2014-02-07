@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: shiji.content\n"
-"POT-Creation-Date: 2014-02-07 06:54+0000\n"
-"PO-Revision-Date: 2014-02-07 14:56+0800\n"
+"POT-Creation-Date: 2014-02-07 08:56+0000\n"
+"PO-Revision-Date: 2014-02-07 16:57+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -19,8 +19,8 @@ msgstr ""
 msgid "AQ"
 msgstr "安全"
 
-#: ./diary.py:62
-#: ./diary_templates/view.pt:34
+#: ./diary.py:72
+#: ./diary_templates/view.pt:44
 msgid "Absence"
 msgstr "出缺勤情況"
 
@@ -37,15 +37,10 @@ msgstr "棟別"
 msgid "Bulletin"
 msgstr "公告"
 
-#: ./diary.py:67
-#: ./diary_templates/view.pt:39
+#: ./diary.py:77
+#: ./diary_templates/view.pt:49
 msgid "Comment"
 msgstr "委員及住戶意見項目"
-
-#: ./diary.py:57
-#: ./diary_templates/view.pt:29
-msgid "Contractor"
-msgstr "會館工作事項"
 
 #: ./diary.py:39
 #: ./diary_templates/view.pt:14
@@ -67,12 +62,11 @@ msgid "Duty"
 msgstr "權責"
 
 #: ./bulletin.py:52
-#: ./bulletin_templates/view.pt:19
+#: ./bulletin_templates/view.pt:22
 msgid "End Date"
 msgstr "結束日期"
 
 #: ./bulletin.py:84
-#: ./bulletin_templates/view.pt:24
 msgid "File"
 msgstr "檔案"
 
@@ -86,6 +80,11 @@ msgstr "工務"
 msgid "HB"
 msgstr "環保"
 
+#: ./diary.py:67
+#: ./diary_templates/view.pt:39
+msgid "HallWork"
+msgstr "會館工作事項"
+
 #: ./bulletin.py:22
 msgid "J"
 msgstr ""
@@ -98,17 +97,27 @@ msgstr ""
 msgid "L"
 msgstr ""
 
+#: ./diary.py:52
+#: ./diary_templates/view.pt:24
+msgid "Logistics"
+msgstr "物管工作事項"
+
 #: ./bulletin.py:25
 msgid "M"
 msgstr ""
+
+#: ./diary.py:62
+#: ./diary_templates/view.pt:34
+msgid "Maintain"
+msgstr "(工務、環保) 公設維護缺失報修項目"
 
 #: ./bulletin.py:26
 msgid "N"
 msgstr ""
 
 #: ./bulletin.py:73
-#: ./diary.py:72
-#: ./diary_templates/view.pt:44
+#: ./diary.py:87
+#: ./diary_templates/view.pt:59
 msgid "Note"
 msgstr "備註"
 
@@ -128,6 +137,11 @@ msgstr "建議"
 msgid "Q"
 msgstr ""
 
+#: ./diary.py:82
+#: ./diary_templates/view.pt:54
+msgid "Residence"
+msgstr "社區居住現況"
+
 #: ./bulletin.py:15
 #: ./diary.py:13
 msgid "SW"
@@ -136,6 +150,11 @@ msgstr "事務"
 #: ./bulletin.py:78
 msgid "Searchable Text"
 msgstr "全文檢索文字"
+
+#: ./diary.py:57
+#: ./diary_templates/view.pt:29
+msgid "Security"
+msgstr "保全工作事項"
 
 #: ./profiles/default/types/Bulletin.xml
 msgid "ShiJi Bulletin Type"
@@ -150,14 +169,9 @@ msgid "ShiJi Proposal Type"
 msgstr "建議事項"
 
 #: ./bulletin.py:47
-#: ./bulletin_templates/view.pt:14
+#: ./bulletin_templates/view.pt:17
 msgid "Start Date"
 msgstr "開始日期"
-
-#: ./diary.py:52
-#: ./diary_templates/view.pt:24
-msgid "Text"
-msgstr "各類工作事項"
 
 #: ./diary.py:35
 #: ./proposal.py:27
@@ -168,4 +182,9 @@ msgstr "標題"
 #: ./diary.py:14
 msgid "WK"
 msgstr "文康"
+
+#. Default: "File contents"
+#: ./bulletin_templates/view.pt:39
+msgid "heading_file_contents"
+msgstr ""
 
