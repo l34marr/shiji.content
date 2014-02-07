@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-12-19 08:33+0000\n"
+"POT-Creation-Date: 2014-02-07 06:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,24 +17,115 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: shiji.content\n"
 
+#: ./bulletin.py:18
+msgid "AQ"
+msgstr ""
+
 #: ./proposal.py:36
+#: ./proposal_templates/view.pt:14
 msgid "Body"
+msgstr ""
+
+#: ./bulletin.py:65
+msgid "Buliding"
+msgstr ""
+
+#: ./profiles/default/types/Bulletin.xml
+msgid "Bulletin"
 msgstr ""
 
 #: ./proposal.py:31
 msgid "Description"
 msgstr ""
 
+#: ./bulletin.py:57
+msgid "Duty"
+msgstr ""
+
+#: ./bulletin.py:52
+#: ./bulletin_templates/view.pt:19
+msgid "End Date"
+msgstr ""
+
+#: ./bulletin.py:84
+#: ./bulletin_templates/view.pt:24
+msgid "File"
+msgstr ""
+
+#: ./bulletin.py:14
+msgid "GW"
+msgstr ""
+
+#: ./bulletin.py:17
+msgid "HB"
+msgstr ""
+
+#: ./bulletin.py:22
+msgid "J"
+msgstr ""
+
+#: ./bulletin.py:23
+msgid "K"
+msgstr ""
+
+#: ./bulletin.py:24
+msgid "L"
+msgstr ""
+
+#: ./bulletin.py:25
+msgid "M"
+msgstr ""
+
+#: ./bulletin.py:26
+msgid "N"
+msgstr ""
+
+#: ./bulletin.py:73
+msgid "Note"
+msgstr ""
+
+#: ./bulletin.py:27
+msgid "O"
+msgstr ""
+
+#: ./bulletin.py:28
+msgid "P"
+msgstr ""
+
 #: ./profiles/default/types/Proposal.xml
 msgid "Proposal"
+msgstr ""
+
+#: ./bulletin.py:29
+msgid "Q"
+msgstr ""
+
+#: ./bulletin.py:15
+msgid "SW"
+msgstr ""
+
+#: ./bulletin.py:78
+msgid "Searchable Text"
+msgstr ""
+
+#: ./profiles/default/types/Bulletin.xml
+msgid "ShiJi Bulletin Type"
 msgstr ""
 
 #: ./profiles/default/types/Proposal.xml
 msgid "ShiJi Proposal Type"
 msgstr ""
 
+#: ./bulletin.py:47
+#: ./bulletin_templates/view.pt:14
+msgid "Start Date"
+msgstr ""
+
 #: ./proposal.py:27
-#: ./proposal_templates/view.pt:14
 msgid "Title"
+msgstr ""
+
+#: ./bulletin.py:16
+msgid "WK"
 msgstr ""
 

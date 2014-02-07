@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: shiji.content\n"
-"POT-Creation-Date: 2013-12-19 08:33+0000\n"
-"PO-Revision-Date: 2013-12-19 16:34+0800\n"
+"POT-Creation-Date: 2014-02-07 06:05+0000\n"
+"PO-Revision-Date: 2014-02-07 14:06+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -14,24 +14,115 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: shiji.content\n"
 
+#: ./bulletin.py:18
+msgid "AQ"
+msgstr "安全"
+
 #: ./proposal.py:36
+#: ./proposal_templates/view.pt:14
 msgid "Body"
 msgstr "說明內容"
+
+#: ./bulletin.py:65
+msgid "Buliding"
+msgstr "棟別"
+
+#: ./profiles/default/types/Bulletin.xml
+msgid "Bulletin"
+msgstr "公告"
 
 #: ./proposal.py:31
 msgid "Description"
 msgstr "摘要描述"
 
+#: ./bulletin.py:57
+msgid "Duty"
+msgstr "權責"
+
+#: ./bulletin.py:52
+#: ./bulletin_templates/view.pt:19
+msgid "End Date"
+msgstr "結束日期"
+
+#: ./bulletin.py:84
+#: ./bulletin_templates/view.pt:24
+msgid "File"
+msgstr "檔案"
+
+#: ./bulletin.py:14
+msgid "GW"
+msgstr "工務"
+
+#: ./bulletin.py:17
+msgid "HB"
+msgstr "環保"
+
+#: ./bulletin.py:22
+msgid "J"
+msgstr ""
+
+#: ./bulletin.py:23
+msgid "K"
+msgstr ""
+
+#: ./bulletin.py:24
+msgid "L"
+msgstr ""
+
+#: ./bulletin.py:25
+msgid "M"
+msgstr ""
+
+#: ./bulletin.py:26
+msgid "N"
+msgstr ""
+
+#: ./bulletin.py:73
+msgid "Note"
+msgstr "備註"
+
+#: ./bulletin.py:27
+msgid "O"
+msgstr ""
+
+#: ./bulletin.py:28
+msgid "P"
+msgstr ""
+
 #: ./profiles/default/types/Proposal.xml
 msgid "Proposal"
 msgstr "建議"
+
+#: ./bulletin.py:29
+msgid "Q"
+msgstr ""
+
+#: ./bulletin.py:15
+msgid "SW"
+msgstr "事務"
+
+#: ./bulletin.py:78
+msgid "Searchable Text"
+msgstr "全文檢索文字"
+
+#: ./profiles/default/types/Bulletin.xml
+msgid "ShiJi Bulletin Type"
+msgstr "公告"
 
 #: ./profiles/default/types/Proposal.xml
 msgid "ShiJi Proposal Type"
 msgstr "建議事項"
 
+#: ./bulletin.py:47
+#: ./bulletin_templates/view.pt:14
+msgid "Start Date"
+msgstr "開始日期"
+
 #: ./proposal.py:27
-#: ./proposal_templates/view.pt:14
 msgid "Title"
 msgstr ""
+
+#: ./bulletin.py:16
+msgid "WK"
+msgstr "文康"
 
