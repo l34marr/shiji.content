@@ -1,0 +1,52 @@
+<html lang="en"
+ xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ xmlns:tal="http://xml.zope.org/namespaces/tal"
+ xmlns:metal="http://xml.zope.org/namespaces/metal"
+ xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+ metal:use-macro="context/main_template/macros/master"
+ i18n:domain="shiji.content">
+<body>
+
+<metal:main fill-slot="content-core">
+  <metal:content-core define-macro="content-core">
+
+<div tal:condition="context/date">
+  <tal:field i18n:translate="">Date</tal:field>:
+  <span tal:replace="context/date" />
+</div>
+
+<div tal:condition="context/duty">
+  <tal:field i18n:translate="">Duty</tal:field>:
+  <span tal:replace="context/duty" />
+</div>
+
+<div tal:condition="context/text">
+  <tal:field i18n:translate="">Text</tal:field>:
+  <span tal:replace="structure context/text/output" />
+</div>
+
+<div tal:condition="context/contractor">
+  <tal:field i18n:translate="">Contractor</tal:field>:
+  <span tal:replace="structure context/contractor/output" />
+</div>
+
+<div tal:condition="context/absence">
+  <tal:field i18n:translate="">Absence</tal:field>:
+  <span tal:replace="structure context/absence/output" />
+</div>
+
+<div tal:condition="context/comment">
+  <tal:field i18n:translate="">Comment</tal:field>:
+  <span tal:replace="structure context/comment/output" />
+</div>
+
+<div tal:condition="context/note">
+  <tal:field i18n:translate="">Note</tal:field>:
+  <span tal:replace="structure context/note/output" />
+</div>
+
+  </metal:content-core>
+</metal:main>
+
+</body>
+</html>
