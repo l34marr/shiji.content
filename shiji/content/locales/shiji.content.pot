@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2014-02-07 06:05+0000\n"
+"POT-Creation-Date: 2014-02-07 06:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,13 @@ msgstr ""
 "Domain: shiji.content\n"
 
 #: ./bulletin.py:18
+#: ./diary.py:16
 msgid "AQ"
+msgstr ""
+
+#: ./diary.py:62
+#: ./diary_templates/view.pt:34
+msgid "Absence"
 msgstr ""
 
 #: ./proposal.py:36
@@ -34,11 +40,32 @@ msgstr ""
 msgid "Bulletin"
 msgstr ""
 
+#: ./diary.py:67
+#: ./diary_templates/view.pt:39
+msgid "Comment"
+msgstr ""
+
+#: ./diary.py:57
+#: ./diary_templates/view.pt:29
+msgid "Contractor"
+msgstr ""
+
+#: ./diary.py:39
+#: ./diary_templates/view.pt:14
+msgid "Date"
+msgstr ""
+
 #: ./proposal.py:31
 msgid "Description"
 msgstr ""
 
+#: ./profiles/default/types/Diary.xml
+msgid "Diary"
+msgstr ""
+
 #: ./bulletin.py:57
+#: ./diary.py:44
+#: ./diary_templates/view.pt:19
 msgid "Duty"
 msgstr ""
 
@@ -53,10 +80,12 @@ msgid "File"
 msgstr ""
 
 #: ./bulletin.py:14
+#: ./diary.py:12
 msgid "GW"
 msgstr ""
 
 #: ./bulletin.py:17
+#: ./diary.py:15
 msgid "HB"
 msgstr ""
 
@@ -81,6 +110,8 @@ msgid "N"
 msgstr ""
 
 #: ./bulletin.py:73
+#: ./diary.py:72
+#: ./diary_templates/view.pt:44
 msgid "Note"
 msgstr ""
 
@@ -101,6 +132,7 @@ msgid "Q"
 msgstr ""
 
 #: ./bulletin.py:15
+#: ./diary.py:13
 msgid "SW"
 msgstr ""
 
@@ -112,6 +144,10 @@ msgstr ""
 msgid "ShiJi Bulletin Type"
 msgstr ""
 
+#: ./profiles/default/types/Diary.xml
+msgid "ShiJi Diary Type"
+msgstr ""
+
 #: ./profiles/default/types/Proposal.xml
 msgid "ShiJi Proposal Type"
 msgstr ""
@@ -121,11 +157,18 @@ msgstr ""
 msgid "Start Date"
 msgstr ""
 
+#: ./diary.py:52
+#: ./diary_templates/view.pt:24
+msgid "Text"
+msgstr ""
+
+#: ./diary.py:35
 #: ./proposal.py:27
 msgid "Title"
 msgstr ""
 
 #: ./bulletin.py:16
+#: ./diary.py:14
 msgid "WK"
 msgstr ""
 

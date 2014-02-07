@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: shiji.content\n"
-"POT-Creation-Date: 2014-02-07 06:05+0000\n"
-"PO-Revision-Date: 2014-02-07 14:06+0800\n"
+"POT-Creation-Date: 2014-02-07 06:54+0000\n"
+"PO-Revision-Date: 2014-02-07 14:56+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -15,8 +15,14 @@ msgstr ""
 "Domain: shiji.content\n"
 
 #: ./bulletin.py:18
+#: ./diary.py:16
 msgid "AQ"
 msgstr "安全"
+
+#: ./diary.py:62
+#: ./diary_templates/view.pt:34
+msgid "Absence"
+msgstr "出缺勤情況"
 
 #: ./proposal.py:36
 #: ./proposal_templates/view.pt:14
@@ -31,11 +37,32 @@ msgstr "棟別"
 msgid "Bulletin"
 msgstr "公告"
 
+#: ./diary.py:67
+#: ./diary_templates/view.pt:39
+msgid "Comment"
+msgstr "委員及住戶意見項目"
+
+#: ./diary.py:57
+#: ./diary_templates/view.pt:29
+msgid "Contractor"
+msgstr "會館工作事項"
+
+#: ./diary.py:39
+#: ./diary_templates/view.pt:14
+msgid "Date"
+msgstr "日期"
+
 #: ./proposal.py:31
 msgid "Description"
 msgstr "摘要描述"
 
+#: ./profiles/default/types/Diary.xml
+msgid "Diary"
+msgstr "日誌"
+
 #: ./bulletin.py:57
+#: ./diary.py:44
+#: ./diary_templates/view.pt:19
 msgid "Duty"
 msgstr "權責"
 
@@ -50,10 +77,12 @@ msgid "File"
 msgstr "檔案"
 
 #: ./bulletin.py:14
+#: ./diary.py:12
 msgid "GW"
 msgstr "工務"
 
 #: ./bulletin.py:17
+#: ./diary.py:15
 msgid "HB"
 msgstr "環保"
 
@@ -78,6 +107,8 @@ msgid "N"
 msgstr ""
 
 #: ./bulletin.py:73
+#: ./diary.py:72
+#: ./diary_templates/view.pt:44
 msgid "Note"
 msgstr "備註"
 
@@ -98,6 +129,7 @@ msgid "Q"
 msgstr ""
 
 #: ./bulletin.py:15
+#: ./diary.py:13
 msgid "SW"
 msgstr "事務"
 
@@ -109,6 +141,10 @@ msgstr "全文檢索文字"
 msgid "ShiJi Bulletin Type"
 msgstr "公告"
 
+#: ./profiles/default/types/Diary.xml
+msgid "ShiJi Diary Type"
+msgstr "日誌"
+
 #: ./profiles/default/types/Proposal.xml
 msgid "ShiJi Proposal Type"
 msgstr "建議事項"
@@ -118,11 +154,18 @@ msgstr "建議事項"
 msgid "Start Date"
 msgstr "開始日期"
 
+#: ./diary.py:52
+#: ./diary_templates/view.pt:24
+msgid "Text"
+msgstr "各類工作事項"
+
+#: ./diary.py:35
 #: ./proposal.py:27
 msgid "Title"
-msgstr ""
+msgstr "標題"
 
 #: ./bulletin.py:16
+#: ./diary.py:14
 msgid "WK"
 msgstr "文康"
 
