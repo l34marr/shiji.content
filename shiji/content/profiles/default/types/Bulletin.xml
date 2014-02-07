@@ -20,7 +20,7 @@
   <property name="klass">shiji.content.bulletin.Bulletin</property>
 
   <property name="behaviors">
-    <element value="plone.app.dexterity.behaviors.filename.INameFromFileName" />
+    <element value="shiji.content.behaviors.shortname.INameFromCreationDate" />
     <element value="plone.app.dexterity.behaviors.metadata.IBasic" />
     <element value="plone.app.dexterity.behaviors.metadata.ICategorization" />
     <element value="plone.app.dexterity.behaviors.metadata.IPublication" />

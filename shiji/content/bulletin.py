@@ -18,6 +18,16 @@ duty = SimpleVocabulary([
     SimpleTerm(value=u'aq', title=_(u'AQ'))
 ])
 
+buliding = SimpleVocabulary([
+    SimpleTerm(value='J', title=_(u'J')),
+    SimpleTerm(value='K', title=_(u'K')),
+    SimpleTerm(value='L', title=_(u'L')),
+    SimpleTerm(value='M', title=_(u'M')),
+    SimpleTerm(value='N', title=_(u'N')),
+    SimpleTerm(value='O', title=_(u'O')),
+    SimpleTerm(value='P', title=_(u'P')),
+    SimpleTerm(value='Q', title=_(u'Q'))
+])
 
 # Interface class; used to define content-type schema.
 
@@ -47,13 +57,16 @@ class IBulletin(form.Schema):
         title=_(u"Duty"),
         required=False,
         value_type=schema.Choice(
-        vocabulary=duty,
+            vocabulary=duty,
         )
     )
 
-    text = RichText(
-        title=_(u"Text"),
+    buliding = schema.List(
+        title=_(u"Buliding"),
         required=False,
+        value_type=schema.Choice(
+            vocabulary=buliding,
+        )
     )
 
     note = RichText(
