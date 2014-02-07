@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: shiji.content\n"
-"POT-Creation-Date: 2014-02-07 08:56+0000\n"
-"PO-Revision-Date: 2014-02-07 16:57+0800\n"
+"POT-Creation-Date: 2014-02-07 10:09+0000\n"
+"PO-Revision-Date: 2014-02-07 18:10+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -30,7 +30,8 @@ msgid "Body"
 msgstr "說明內容"
 
 #: ./bulletin.py:65
-msgid "Buliding"
+#: ./bulletin_templates/view.pt:32
+msgid "Building"
 msgstr "棟別"
 
 #: ./profiles/default/types/Bulletin.xml
@@ -56,8 +57,8 @@ msgid "Diary"
 msgstr "日誌"
 
 #: ./bulletin.py:57
+#: ./bulletin_templates/view.pt:27
 #: ./diary.py:44
-#: ./diary_templates/view.pt:19
 msgid "Duty"
 msgstr "權責"
 
@@ -184,7 +185,7 @@ msgid "WK"
 msgstr "文康"
 
 #. Default: "File contents"
-#: ./bulletin_templates/view.pt:39
+#: ./bulletin_templates/view.pt:49
 msgid "heading_file_contents"
 msgstr ""
 

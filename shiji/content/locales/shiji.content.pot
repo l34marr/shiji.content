@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2014-02-07 08:56+0000\n"
+"POT-Creation-Date: 2014-02-07 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,8 @@ msgid "Body"
 msgstr ""
 
 #: ./bulletin.py:65
-msgid "Buliding"
+#: ./bulletin_templates/view.pt:32
+msgid "Building"
 msgstr ""
 
 #: ./profiles/default/types/Bulletin.xml
@@ -59,8 +60,8 @@ msgid "Diary"
 msgstr ""
 
 #: ./bulletin.py:57
+#: ./bulletin_templates/view.pt:27
 #: ./diary.py:44
-#: ./diary_templates/view.pt:19
 msgid "Duty"
 msgstr ""
 
@@ -187,7 +188,7 @@ msgid "WK"
 msgstr ""
 
 #. Default: "File contents"
-#: ./bulletin_templates/view.pt:39
+#: ./bulletin_templates/view.pt:49
 msgid "heading_file_contents"
 msgstr ""
 

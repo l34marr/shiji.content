@@ -18,7 +18,7 @@ duty = SimpleVocabulary([
     SimpleTerm(value=u'aq', title=_(u'AQ'))
 ])
 
-buliding = SimpleVocabulary([
+building = SimpleVocabulary([
     SimpleTerm(value='J', title=_(u'J')),
     SimpleTerm(value='K', title=_(u'K')),
     SimpleTerm(value='L', title=_(u'L')),
@@ -61,11 +61,11 @@ class IBulletin(form.Schema):
         )
     )
 
-    buliding = schema.List(
-        title=_(u"Buliding"),
+    building = schema.List(
+        title=_(u"Building"),
         required=False,
         value_type=schema.Choice(
-            vocabulary=buliding,
+            vocabulary=building,
         )
     )
 

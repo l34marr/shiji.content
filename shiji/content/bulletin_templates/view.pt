@@ -8,7 +8,9 @@
 <body>
 
 <metal:main fill-slot="content-core">
-  <metal:content-core define-macro="content-core">
+  <metal:content-core define-macro="content-core"
+   tal:define="content_type context/file/contentType|nothing;
+               v python:context.restrictedTraverse('contenttype_utils');">
 
 <div tal:condition="context/start">
   <tal:field i18n:translate="">Start Date</tal:field>:
@@ -20,9 +22,31 @@
   <span tal:replace="context/end" />
 </div>
 
-<div tal:condition="context/file">
-  <tal:field i18n:translate="">File</tal:field>:
-  <span tal:replace="context/file/filename" />
+<div tal:condition="context/duty">
+  <tal:field i18n:translate="">Duty</tal:field>:
+  <span tal:replace="context/duty" />
+</div>
+
+<div tal:condition="context/building">
+  <tal:field i18n:translate="">Building</tal:field>:
+  <span tal:replace="context/building" />
+</div>
+
+<p>
+  <a tal:attributes="href string:${context/absolute_url}/@@download/file/${context/file/filename}">
+    <img tal:attributes="src python: v.getMimeTypeIcon(context.file);
+                         alt content_type;" border="0"  />
+    <tal:name tal:content="context/file/filename" >Filename</tal:name>
+  </a>
+  <span class="discreet"
+   tal:define="size context/file/getSize;
+               kb python:size/1024">
+   &mdash; <span tal:replace="kb" /> KB</span>
+</p>
+
+<div tal:condition="python: content_type.startswith('text')">
+  <h2 i18n:translate="heading_file_contents">File contents</h2>
+  <pre tal:content="context/file/data|nothing" />
 </div>
 
   </metal:content-core>
