@@ -10,11 +10,12 @@
 <metal:main fill-slot="content-core">
   <metal:content-core define-macro="content-core"
    tal:define="content_type context/file/contentType|nothing;
+               location string:${context/absolute_url}/@@download/file/${context/file/filename};
                v python:context.restrictedTraverse('contenttype_utils');">
 
-<div tal:condition="context/start">
+<div tal:condition="context/date">
   <tal:field i18n:translate="">Start Date</tal:field>:
-  <span tal:replace="context/start" />
+  <span tal:replace="context/date" />
 </div>
 
 <div tal:condition="context/end">
@@ -43,6 +44,15 @@
                kb python:size/1024">
    &mdash; <span tal:replace="kb" /> KB</span>
 </p>
+
+<object class="viewembededfile" type="application/pdf" data=""
+ tal:condition="python:content_type.endswith('pdf')"
+ tal:attributes="data context/absolute_url; width string:100%; height string:900">
+  <a href="" tal:attributes="href location">Please click here to download the PDF.</a>
+  <embed src="" class="viewembededfile" type="application/pdf"
+   tal:attributes="src context/absolute_url">
+  </embed>
+</object>
 
 <div tal:condition="python: content_type.startswith('text')">
   <h2 i18n:translate="heading_file_contents">File contents</h2>

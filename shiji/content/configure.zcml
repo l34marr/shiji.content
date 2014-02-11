@@ -14,6 +14,7 @@
   <!-- Include files and packages -->
   <include package=".behaviors" />
   <include file="permissions.zcml" />
+  <include file="vocabularies.zcml" />
 
   <!-- Grok the package to initialize schema interfaces and content classes -->
   <grok:grok package="." />

@@ -10,14 +10,6 @@ from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
 
 from shiji.content import MessageFactory as _
 
-duty = SimpleVocabulary([
-    SimpleTerm(value=u'gw', title=_(u'GW')),
-    SimpleTerm(value=u'sw', title=_(u'SW')),
-    SimpleTerm(value=u'wk', title=_(u'WK')),
-    SimpleTerm(value=u'hb', title=_(u'HB')),
-    SimpleTerm(value=u'aq', title=_(u'AQ'))
-])
-
 building = SimpleVocabulary([
     SimpleTerm(value='J', title=_(u'J')),
     SimpleTerm(value='K', title=_(u'K')),
@@ -43,7 +35,7 @@ class IBulletin(form.Schema):
     
     #form.model("models/bulletin.xml")
 
-    start = schema.Date(
+    date = schema.Date(
         title=_(u"Start Date"),
         required=False,
     )
@@ -57,7 +49,7 @@ class IBulletin(form.Schema):
         title=_(u"Duty"),
         required=False,
         value_type=schema.Choice(
-            vocabulary=duty,
+            vocabulary='duty',
         )
     )
 

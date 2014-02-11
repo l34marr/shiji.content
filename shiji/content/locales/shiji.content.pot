@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2014-02-07 10:09+0000\n"
+"POT-Creation-Date: 2014-02-07 15:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: shiji.content\n"
 
-#: ./bulletin.py:18
 #: ./diary.py:16
+#: ./vocabularies.py:18
 msgid "AQ"
 msgstr ""
 
@@ -32,7 +32,7 @@ msgstr ""
 msgid "Body"
 msgstr ""
 
-#: ./bulletin.py:65
+#: ./bulletin.py:57
 #: ./bulletin_templates/view.pt:32
 msgid "Building"
 msgstr ""
@@ -59,28 +59,28 @@ msgstr ""
 msgid "Diary"
 msgstr ""
 
-#: ./bulletin.py:57
+#: ./bulletin.py:49
 #: ./bulletin_templates/view.pt:27
 #: ./diary.py:44
 msgid "Duty"
 msgstr ""
 
-#: ./bulletin.py:52
+#: ./bulletin.py:44
 #: ./bulletin_templates/view.pt:22
 msgid "End Date"
 msgstr ""
 
-#: ./bulletin.py:84
+#: ./bulletin.py:76
 msgid "File"
 msgstr ""
 
-#: ./bulletin.py:14
 #: ./diary.py:12
+#: ./vocabularies.py:14
 msgid "GW"
 msgstr ""
 
-#: ./bulletin.py:17
 #: ./diary.py:15
+#: ./vocabularies.py:17
 msgid "HB"
 msgstr ""
 
@@ -89,15 +89,15 @@ msgstr ""
 msgid "HallWork"
 msgstr ""
 
-#: ./bulletin.py:22
+#: ./bulletin.py:14
 msgid "J"
 msgstr ""
 
-#: ./bulletin.py:23
+#: ./bulletin.py:15
 msgid "K"
 msgstr ""
 
-#: ./bulletin.py:24
+#: ./bulletin.py:16
 msgid "L"
 msgstr ""
 
@@ -106,7 +106,7 @@ msgstr ""
 msgid "Logistics"
 msgstr ""
 
-#: ./bulletin.py:25
+#: ./bulletin.py:17
 msgid "M"
 msgstr ""
 
@@ -115,21 +115,21 @@ msgstr ""
 msgid "Maintain"
 msgstr ""
 
-#: ./bulletin.py:26
+#: ./bulletin.py:18
 msgid "N"
 msgstr ""
 
-#: ./bulletin.py:73
+#: ./bulletin.py:65
 #: ./diary.py:87
 #: ./diary_templates/view.pt:59
 msgid "Note"
 msgstr ""
 
-#: ./bulletin.py:27
+#: ./bulletin.py:19
 msgid "O"
 msgstr ""
 
-#: ./bulletin.py:28
+#: ./bulletin.py:20
 msgid "P"
 msgstr ""
 
@@ -137,7 +137,7 @@ msgstr ""
 msgid "Proposal"
 msgstr ""
 
-#: ./bulletin.py:29
+#: ./bulletin.py:21
 msgid "Q"
 msgstr ""
 
@@ -146,12 +146,12 @@ msgstr ""
 msgid "Residence"
 msgstr ""
 
-#: ./bulletin.py:15
 #: ./diary.py:13
+#: ./vocabularies.py:15
 msgid "SW"
 msgstr ""
 
-#: ./bulletin.py:78
+#: ./bulletin.py:70
 msgid "Searchable Text"
 msgstr ""
 
@@ -172,7 +172,7 @@ msgstr ""
 msgid "ShiJi Proposal Type"
 msgstr ""
 
-#: ./bulletin.py:47
+#: ./bulletin.py:39
 #: ./bulletin_templates/view.pt:17
 msgid "Start Date"
 msgstr ""
@@ -182,13 +182,13 @@ msgstr ""
 msgid "Title"
 msgstr ""
 
-#: ./bulletin.py:16
 #: ./diary.py:14
+#: ./vocabularies.py:16
 msgid "WK"
 msgstr ""
 
 #. Default: "File contents"
-#: ./bulletin_templates/view.pt:49
+#: ./bulletin_templates/view.pt:58
 msgid "heading_file_contents"
 msgstr ""
 
