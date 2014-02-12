@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: shiji.content\n"
-"POT-Creation-Date: 2014-02-07 15:19+0000\n"
+"POT-Creation-Date: 2014-02-12 06:59+0000\n"
 "PO-Revision-Date: 2014-02-07 23:19+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
@@ -14,12 +14,11 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: shiji.content\n"
 
-#: ./diary.py:16
 #: ./vocabularies.py:18
 msgid "AQ"
 msgstr "安全"
 
-#: ./diary.py:72
+#: ./diary.py:63
 #: ./diary_templates/view.pt:44
 msgid "Absence"
 msgstr "出缺勤情況"
@@ -38,12 +37,12 @@ msgstr "棟別"
 msgid "Bulletin"
 msgstr "公告"
 
-#: ./diary.py:77
+#: ./diary.py:68
 #: ./diary_templates/view.pt:49
 msgid "Comment"
 msgstr "委員及住戶意見項目"
 
-#: ./diary.py:39
+#: ./diary.py:30
 #: ./diary_templates/view.pt:14
 msgid "Date"
 msgstr "日期"
@@ -58,7 +57,7 @@ msgstr "日誌"
 
 #: ./bulletin.py:49
 #: ./bulletin_templates/view.pt:27
-#: ./diary.py:44
+#: ./diary.py:35
 msgid "Duty"
 msgstr "權責"
 
@@ -71,17 +70,15 @@ msgstr "結束日期"
 msgid "File"
 msgstr "檔案"
 
-#: ./diary.py:12
 #: ./vocabularies.py:14
 msgid "GW"
 msgstr "工務"
 
-#: ./diary.py:15
 #: ./vocabularies.py:17
 msgid "HB"
 msgstr "環保"
 
-#: ./diary.py:67
+#: ./diary.py:58
 #: ./diary_templates/view.pt:39
 msgid "HallWork"
 msgstr "會館工作事項"
@@ -98,7 +95,7 @@ msgstr ""
 msgid "L"
 msgstr ""
 
-#: ./diary.py:52
+#: ./diary.py:43
 #: ./diary_templates/view.pt:24
 msgid "Logistics"
 msgstr "物管工作事項"
@@ -107,7 +104,7 @@ msgstr "物管工作事項"
 msgid "M"
 msgstr ""
 
-#: ./diary.py:62
+#: ./diary.py:53
 #: ./diary_templates/view.pt:34
 msgid "Maintain"
 msgstr "(工務、環保) 公設維護缺失報修項目"
@@ -117,8 +114,8 @@ msgid "N"
 msgstr ""
 
 #: ./bulletin.py:65
-#: ./diary.py:87
-#: ./diary_templates/view.pt:59
+#: ./bulletin_templates/view.pt:37
+#: ./diary.py:78
 msgid "Note"
 msgstr "備註"
 
@@ -138,12 +135,11 @@ msgstr "建議"
 msgid "Q"
 msgstr ""
 
-#: ./diary.py:82
+#: ./diary.py:73
 #: ./diary_templates/view.pt:54
 msgid "Residence"
 msgstr "社區居住現況"
 
-#: ./diary.py:13
 #: ./vocabularies.py:15
 msgid "SW"
 msgstr "事務"
@@ -152,7 +148,7 @@ msgstr "事務"
 msgid "Searchable Text"
 msgstr "全文檢索文字"
 
-#: ./diary.py:57
+#: ./diary.py:48
 #: ./diary_templates/view.pt:29
 msgid "Security"
 msgstr "保全工作事項"
@@ -174,18 +170,17 @@ msgstr "建議事項"
 msgid "Start Date"
 msgstr "開始日期"
 
-#: ./diary.py:35
+#: ./diary.py:26
 #: ./proposal.py:27
 msgid "Title"
 msgstr "標題"
 
-#: ./diary.py:14
 #: ./vocabularies.py:16
 msgid "WK"
 msgstr "文康"
 
 #. Default: "File contents"
-#: ./bulletin_templates/view.pt:58
+#: ./bulletin_templates/view.pt:63
 msgid "heading_file_contents"
 msgstr ""
 

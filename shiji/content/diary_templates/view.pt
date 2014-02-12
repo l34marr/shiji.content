@@ -17,7 +17,10 @@
 
 <div tal:condition="context/duty">
   <tal:field i18n:translate="">Duty</tal:field>:
-  <span tal:replace="context/duty" />
+  <tal:duty repeat="d context/duty">
+  <span tal:replace="python:view.t_title(d)" />
+  <span class="separator" tal:condition="not: repeat/d/end">,</span>
+  </tal:duty>
 </div>
 
 <div tal:condition="context/logistics">

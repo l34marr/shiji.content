@@ -7,6 +7,8 @@ from zope import schema
 from plone.app.textfield import RichText
 from plone.namedfile.field import NamedBlobFile
 from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
+from zope.component import getUtility
+from zope.schema.interfaces import IVocabularyFactory
 
 from shiji.content import MessageFactory as _
 
@@ -102,4 +104,13 @@ class View(grok.View):
     grok.context(IBulletin)
     grok.require('zope2.View')
     grok.name('view')
+
+    def t_title(self, value):
+        if value in ('GW', 'SW', 'WK', 'HB', 'AQ'):
+            factory = getUtility(IVocabularyFactory, 'duty')
+            vocabulary = factory(self.context)
+            term = vocabulary.getTerm(value)
+            return term.title
+        else:
+            return None
 

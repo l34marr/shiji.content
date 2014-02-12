@@ -4,17 +4,10 @@ from plone.dexterity.content import Item
 
 from zope import schema
 from plone.app.textfield import RichText
-from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
+from zope.component import getUtility
+from zope.schema.interfaces import IVocabularyFactory
 
 from shiji.content import MessageFactory as _
-
-duty = SimpleVocabulary([
-    SimpleTerm(value=u'gw', title=_(u'GW')),
-    SimpleTerm(value=u'sw', title=_(u'SW')),
-    SimpleTerm(value=u'wk', title=_(u'WK')),
-    SimpleTerm(value=u'hb', title=_(u'HB')),
-    SimpleTerm(value=u'aq', title=_(u'AQ'))
-])
 
 
 # Interface class; used to define content-type schema.
@@ -44,7 +37,7 @@ class IDiary(form.Schema):
         title=_(u"Duty"),
         required=False,
         value_type=schema.Choice(
-            vocabulary=duty,
+            vocabulary='duty',
         )
     )
 
@@ -114,4 +107,13 @@ class View(grok.View):
     grok.context(IDiary)
     grok.require('zope2.View')
     grok.name('view')
+
+    def t_title(self, value):
+        if value in ('GW', 'SW', 'WK', 'HB', 'AQ'):
+            factory = getUtility(IVocabularyFactory, 'duty')
+            vocabulary = factory(self.context)
+            term = vocabulary.getTerm(value)
+            return term.title
+        else:
+            return None
 
