@@ -61,6 +61,11 @@ class IDiary(form.Schema):
         required=False,
     )
 
+    cleaning = RichText(
+        title=_(u"Cleaning"),
+        required=False,
+    )
+
     absence = RichText(
         title=_(u"Absence"),
         required=False,
