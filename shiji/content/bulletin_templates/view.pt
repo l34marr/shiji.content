@@ -33,7 +33,10 @@
 
 <div tal:condition="context/building">
   <label i18n:translate="">Building</label>:
-  <span tal:replace="context/building" />
+  <tal:loop repeat="b context/building">
+  <span tal:replace="b" />
+  <span class="separator" tal:condition="not: repeat/b/end">,</span>
+  </tal:loop>
 </div>
 
 <div tal:condition="context/note">
