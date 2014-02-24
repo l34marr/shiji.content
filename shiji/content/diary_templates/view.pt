@@ -11,12 +11,12 @@
   <metal:content-core define-macro="content-core">
 
 <div tal:condition="context/date">
-  <tal:field i18n:translate="">Date</tal:field>:
+  <label i18n:translate="">Date</label>:
   <span tal:replace="context/date" />
 </div>
 
 <div tal:condition="context/duty">
-  <tal:field i18n:translate="">Duty</tal:field>:
+  <label i18n:translate="">Duty</label>:
   <tal:duty repeat="d context/duty">
   <span tal:replace="python:view.t_title(d)" />
   <span class="separator" tal:condition="not: repeat/d/end">,</span>
@@ -24,43 +24,75 @@
 </div>
 
 <div tal:condition="context/logistics">
-  <tal:field i18n:translate="">Logistics</tal:field>:
+<fieldset>
+<legend i18n:translate=""></legend>
+  <label i18n:translate="">Logistics</label>:
   <span tal:replace="structure context/logistics/output" />
+</fieldset>
 </div>
 
 <div tal:condition="context/security">
-  <tal:field i18n:translate="">Security</tal:field>:
+<fieldset>
+<legend i18n:translate=""></legend>
+  <label i18n:translate="">Security</label>:
   <span tal:replace="structure context/security/output" />
+</fieldset>
 </div>
 
 <div tal:condition="context/maintain">
-  <tal:field i18n:translate="">Maintain</tal:field>:
+<fieldset>
+<legend i18n:translate=""></legend>
+  <label i18n:translate="">Maintain</label>:
   <span tal:replace="structure context/maintain/output" />
+</fieldset>
 </div>
 
 <div tal:condition="context/hallwork">
-  <tal:field i18n:translate="">HallWork</tal:field>:
+<fieldset>
+<legend i18n:translate=""></legend>
+  <label i18n:translate="">HallWork</label>:
   <span tal:replace="structure context/hallwork/output" />
+</fieldset>
+</div>
+
+<div tal:condition="context/cleaning">
+<fieldset>
+<legend i18n:translate=""></legend>
+  <label i18n:translate="">Cleaning</label>:
+  <span tal:replace="structure context/cleaning/output" />
+</fieldset>
 </div>
 
 <div tal:condition="context/absence">
-  <tal:field i18n:translate="">Absence</tal:field>:
+<fieldset>
+<legend i18n:translate=""></legend>
+  <label i18n:translate="">Absence</label>:
   <span tal:replace="structure context/absence/output" />
+</fieldset>
 </div>
 
 <div tal:condition="context/comment">
-  <tal:field i18n:translate="">Comment</tal:field>:
+<fieldset>
+<legend i18n:translate=""></legend>
+  <label i18n:translate="">Comment</label>:
   <span tal:replace="structure context/comment/output" />
+</fieldset>
 </div>
 
 <div tal:condition="context/residence">
-  <tal:field i18n:translate="">Residence</tal:field>:
+<fieldset>
+<legend i18n:translate=""></legend>
+  <label i18n:translate="">Residence</label>:
   <span tal:replace="structure context/residence/output" />
+</fieldset>
 </div>
 
 <div tal:condition="context/note">
-  <tal:field i18n:translate="">Note</tal:field>:
+<fieldset>
+<legend i18n:translate=""></legend>
+  <label i18n:translate="">Note</label>:
   <span tal:replace="structure context/note/output" />
+</fieldset>
 </div>
 
   </metal:content-core>

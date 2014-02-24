@@ -11,7 +11,7 @@
   <metal:content-core define-macro="content-core">
 
 <div tal:condition="context/body">
-  <tal:field i18n:translate="">Body</tal:field>:
+  <label i18n:translate="">Body</label>:
   <span tal:replace="structure context/body/output" />
 </div>
 
