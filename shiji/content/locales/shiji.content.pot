@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2014-02-12 06:59+0000\n"
+"POT-Creation-Date: 2014-02-24 05:56+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,8 +21,8 @@ msgstr ""
 msgid "AQ"
 msgstr ""
 
-#: ./diary.py:63
-#: ./diary_templates/view.pt:44
+#: ./diary.py:70
+#: ./diary_templates/view.pt:69
 msgid "Absence"
 msgstr ""
 
@@ -31,8 +31,8 @@ msgstr ""
 msgid "Body"
 msgstr ""
 
-#: ./bulletin.py:57
-#: ./bulletin_templates/view.pt:32
+#: ./bulletin.py:59
+#: ./bulletin_templates/view.pt:35
 msgid "Building"
 msgstr ""
 
@@ -40,12 +40,17 @@ msgstr ""
 msgid "Bulletin"
 msgstr ""
 
-#: ./diary.py:68
-#: ./diary_templates/view.pt:49
+#: ./diary.py:65
+#: ./diary_templates/view.pt:61
+msgid "Cleaning"
+msgstr ""
+
+#: ./diary.py:75
+#: ./diary_templates/view.pt:77
 msgid "Comment"
 msgstr ""
 
-#: ./diary.py:30
+#: ./diary.py:32
 #: ./diary_templates/view.pt:14
 msgid "Date"
 msgstr ""
@@ -58,18 +63,18 @@ msgstr ""
 msgid "Diary"
 msgstr ""
 
-#: ./bulletin.py:49
+#: ./bulletin.py:51
 #: ./bulletin_templates/view.pt:27
-#: ./diary.py:35
+#: ./diary.py:37
 msgid "Duty"
 msgstr ""
 
-#: ./bulletin.py:44
+#: ./bulletin.py:46
 #: ./bulletin_templates/view.pt:22
 msgid "End Date"
 msgstr ""
 
-#: ./bulletin.py:76
+#: ./bulletin.py:78
 msgid "File"
 msgstr ""
 
@@ -81,52 +86,52 @@ msgstr ""
 msgid "HB"
 msgstr ""
 
-#: ./diary.py:58
-#: ./diary_templates/view.pt:39
+#: ./diary.py:60
+#: ./diary_templates/view.pt:53
 msgid "HallWork"
 msgstr ""
 
-#: ./bulletin.py:14
+#: ./bulletin.py:16
 msgid "J"
 msgstr ""
 
-#: ./bulletin.py:15
+#: ./bulletin.py:17
 msgid "K"
 msgstr ""
 
-#: ./bulletin.py:16
+#: ./bulletin.py:18
 msgid "L"
 msgstr ""
 
-#: ./diary.py:43
-#: ./diary_templates/view.pt:24
+#: ./diary.py:45
+#: ./diary_templates/view.pt:29
 msgid "Logistics"
 msgstr ""
 
-#: ./bulletin.py:17
+#: ./bulletin.py:19
 msgid "M"
 msgstr ""
 
-#: ./diary.py:53
-#: ./diary_templates/view.pt:34
+#: ./diary.py:55
+#: ./diary_templates/view.pt:45
 msgid "Maintain"
 msgstr ""
 
-#: ./bulletin.py:18
+#: ./bulletin.py:20
 msgid "N"
 msgstr ""
 
-#: ./bulletin.py:65
-#: ./bulletin_templates/view.pt:37
-#: ./diary.py:78
+#: ./bulletin.py:67
+#: ./bulletin_templates/view.pt:40
+#: ./diary.py:85
 msgid "Note"
 msgstr ""
 
-#: ./bulletin.py:19
+#: ./bulletin.py:21
 msgid "O"
 msgstr ""
 
-#: ./bulletin.py:20
+#: ./bulletin.py:22
 msgid "P"
 msgstr ""
 
@@ -134,12 +139,12 @@ msgstr ""
 msgid "Proposal"
 msgstr ""
 
-#: ./bulletin.py:21
+#: ./bulletin.py:23
 msgid "Q"
 msgstr ""
 
-#: ./diary.py:73
-#: ./diary_templates/view.pt:54
+#: ./diary.py:80
+#: ./diary_templates/view.pt:85
 msgid "Residence"
 msgstr ""
 
@@ -147,12 +152,12 @@ msgstr ""
 msgid "SW"
 msgstr ""
 
-#: ./bulletin.py:70
+#: ./bulletin.py:72
 msgid "Searchable Text"
 msgstr ""
 
-#: ./diary.py:48
-#: ./diary_templates/view.pt:29
+#: ./diary.py:50
+#: ./diary_templates/view.pt:37
 msgid "Security"
 msgstr ""
 
@@ -168,12 +173,12 @@ msgstr ""
 msgid "ShiJi Proposal Type"
 msgstr ""
 
-#: ./bulletin.py:39
+#: ./bulletin.py:41
 #: ./bulletin_templates/view.pt:17
 msgid "Start Date"
 msgstr ""
 
-#: ./diary.py:26
+#: ./diary.py:28
 #: ./proposal.py:27
 msgid "Title"
 msgstr ""
@@ -183,7 +188,7 @@ msgid "WK"
 msgstr ""
 
 #. Default: "File contents"
-#: ./bulletin_templates/view.pt:63
+#: ./bulletin_templates/view.pt:66
 msgid "heading_file_contents"
 msgstr ""
 
