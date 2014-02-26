@@ -31,6 +31,14 @@
   </tal:duty>
 </div>
 
+<div tal:condition="context/area">
+  <label i18n:translate="">Area</label>:
+  <tal:area repeat="a context/area">
+  <span tal:replace="a" />
+  <span class="separator" tal:condition="not: repeat/a/end">,</span>
+  </tal:area>
+</div>
+
 <div tal:condition="context/building">
   <label i18n:translate="">Building</label>:
   <tal:loop repeat="b context/building">

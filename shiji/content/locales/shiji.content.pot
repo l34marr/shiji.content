@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2014-02-24 05:56+0000\n"
+"POT-Creation-Date: 2014-02-26 08:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,13 +26,18 @@ msgstr ""
 msgid "Absence"
 msgstr ""
 
+#: ./bulletin.py:76
+#: ./bulletin_templates/view.pt:35
+msgid "Area"
+msgstr ""
+
 #: ./proposal.py:36
 #: ./proposal_templates/view.pt:14
 msgid "Body"
 msgstr ""
 
-#: ./bulletin.py:59
-#: ./bulletin_templates/view.pt:35
+#: ./bulletin.py:84
+#: ./bulletin_templates/view.pt:43
 msgid "Building"
 msgstr ""
 
@@ -63,18 +68,18 @@ msgstr ""
 msgid "Diary"
 msgstr ""
 
-#: ./bulletin.py:51
+#: ./bulletin.py:68
 #: ./bulletin_templates/view.pt:27
 #: ./diary.py:37
 msgid "Duty"
 msgstr ""
 
-#: ./bulletin.py:46
+#: ./bulletin.py:63
 #: ./bulletin_templates/view.pt:22
 msgid "End Date"
 msgstr ""
 
-#: ./bulletin.py:78
+#: ./bulletin.py:103
 msgid "File"
 msgstr ""
 
@@ -91,15 +96,15 @@ msgstr ""
 msgid "HallWork"
 msgstr ""
 
-#: ./bulletin.py:16
+#: ./bulletin.py:33
 msgid "J"
 msgstr ""
 
-#: ./bulletin.py:17
+#: ./bulletin.py:34
 msgid "K"
 msgstr ""
 
-#: ./bulletin.py:18
+#: ./bulletin.py:35
 msgid "L"
 msgstr ""
 
@@ -108,7 +113,7 @@ msgstr ""
 msgid "Logistics"
 msgstr ""
 
-#: ./bulletin.py:19
+#: ./bulletin.py:36
 msgid "M"
 msgstr ""
 
@@ -117,21 +122,21 @@ msgstr ""
 msgid "Maintain"
 msgstr ""
 
-#: ./bulletin.py:20
+#: ./bulletin.py:37
 msgid "N"
 msgstr ""
 
-#: ./bulletin.py:67
-#: ./bulletin_templates/view.pt:40
+#: ./bulletin.py:92
+#: ./bulletin_templates/view.pt:51
 #: ./diary.py:85
 msgid "Note"
 msgstr ""
 
-#: ./bulletin.py:21
+#: ./bulletin.py:38
 msgid "O"
 msgstr ""
 
-#: ./bulletin.py:22
+#: ./bulletin.py:39
 msgid "P"
 msgstr ""
 
@@ -139,7 +144,7 @@ msgstr ""
 msgid "Proposal"
 msgstr ""
 
-#: ./bulletin.py:23
+#: ./bulletin.py:40
 msgid "Q"
 msgstr ""
 
@@ -152,7 +157,7 @@ msgstr ""
 msgid "SW"
 msgstr ""
 
-#: ./bulletin.py:72
+#: ./bulletin.py:97
 msgid "Searchable Text"
 msgstr ""
 
@@ -173,7 +178,7 @@ msgstr ""
 msgid "ShiJi Proposal Type"
 msgstr ""
 
-#: ./bulletin.py:41
+#: ./bulletin.py:58
 #: ./bulletin_templates/view.pt:17
 msgid "Start Date"
 msgstr ""
@@ -188,7 +193,7 @@ msgid "WK"
 msgstr ""
 
 #. Default: "File contents"
-#: ./bulletin_templates/view.pt:66
+#: ./bulletin_templates/view.pt:77
 msgid "heading_file_contents"
 msgstr ""
 
