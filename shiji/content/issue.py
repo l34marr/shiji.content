@@ -1,5 +1,6 @@
 from five import grok
-from plone.directives import dexterity, form
+from plone.directives import form
+from plone.dexterity.content import Item
 
 from zope import schema
 from plone.app.textfield import RichText
@@ -92,7 +93,7 @@ class IIssue(form.Schema):
 # methods and properties. Put methods that are mainly useful for rendering
 # in separate view classes.
 
-class Issue(dexterity.Container):
+class Issue(Item):
     grok.implements(IIssue)
     
     # Add your class methods and properties here
