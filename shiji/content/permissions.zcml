@@ -5,8 +5,8 @@
 
   <!-- Define new permissions -->
   <permission
-    id="add.proposal"
-    title="ShiJi: Add Proposal"
+    id="add.issue"
+    title="ShiJi: Add Issue"
     />
 
 </configure>

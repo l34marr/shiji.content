@@ -9,4 +9,14 @@
     component=".vocabularies.DutyFactory"
     provides="zope.schema.interfaces.IVocabularyFactory" />
 
+  <utility
+    name="origin"
+    component=".vocabularies.OriginFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
+    name="track"
+    component=".vocabularies.TrackFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
 </configure>

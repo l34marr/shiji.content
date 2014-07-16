@@ -1,0 +1,63 @@
+<html lang="en"
+ xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ xmlns:tal="http://xml.zope.org/namespaces/tal"
+ xmlns:metal="http://xml.zope.org/namespaces/metal"
+ xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+ metal:use-macro="context/main_template/macros/master"
+ i18n:domain="shiji.content">
+<body>
+
+<metal:main fill-slot="content-core">
+  <metal:content-core define-macro="content-core">
+
+<div tal:condition="context/spot">
+  <label i18n:translate="">Spot Date</label>:
+  <span tal:replace="context/spot" />
+</div>
+<div tal:condition="context/origin">
+  <label i18n:translate="">Origin</label>:
+  <tal:origin repeat="o context/origin">
+  <span tal:replace="python:view.t_title('origin',o)" />
+  <span class="separator" tal:condition="not: repeat/o/end">,</span> 
+  </tal:origin>
+</div>
+<div tal:condition="context/form">
+  <label i18n:translate="">Form Number</label>:
+  <span tal:replace="context/form" />
+</div>
+<div tal:condition="context/duty">
+  <label i18n:translate="">Duty</label>:
+  <tal:duty repeat="d context/duty">
+  <span tal:replace="python:view.t_title('duty',d)" />
+  <span class="separator" tal:condition="not: repeat/d/end">,</span>
+  </tal:duty>
+</div>
+<div tal:condition="context/body">
+  <label i18n:translate="">Body</label>:
+  <span tal:replace="structure context/body/output" />
+</div>
+<div tal:condition="context/track">
+  <label i18n:translate="">Track</label>:
+  <span tal:replace="python:view.t_title('track',context.track)" />
+</div>
+<div tal:condition="context/done">
+  <label i18n:translate="">Done Date</label>:
+  <span tal:replace="context/done" />
+</div>
+<div tal:condition="context/in_charge">
+  <label i18n:translate="">Persons in Charge</label>:
+  <tal:in_charge repeat="c context/in_charge">
+  <span tal:replace="c" />
+  <span class="separator" tal:condition="not: repeat/c/end">,</span> 
+  </tal:in_charge>
+</div>
+<div tal:condition="context/note">
+  <label i18n:translate="">Note</label>:
+  <span tal:replace="structure context/note/output" />
+</div>
+
+  </metal:content-core>
+</metal:main>
+
+</body>
+</html>

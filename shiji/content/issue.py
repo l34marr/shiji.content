@@ -1,35 +1,48 @@
 from five import grok
-from plone.directives import form
-from plone.dexterity.content import Item
+from plone.directives import dexterity, form
 
 from zope import schema
 from plone.app.textfield import RichText
+from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
 from zope.component import getUtility
 from zope.schema.interfaces import IVocabularyFactory
 
 from shiji.content import MessageFactory as _
 
-
 # Interface class; used to define content-type schema.
 
-class IDiary(form.Schema):
-    """ShiJi Diary Type
+class IIssue(form.Schema):
     """
-
+    ShiJi Issue Type
+    """
+    
     # If you want a schema-defined interface, delete the form.model
     # line below and delete the matching file in the models sub-directory.
     # If you want a model-based interface, edit
-    # models/diary.xml to define the content type
+    # models/issue.xml to define the content type
     # and add directives here as necessary.
     
-    #form.model("models/diary.xml")
+    #form.model("models/issue.xml")
 
     title = schema.TextLine(
         title=_(u"Title"),
     )
 
-    date = schema.Date(
-        title=_(u"Date"),
+    spot = schema.Date(
+        title=_(u"Spot Date"),
+        required=False,
+    )
+
+    origin = schema.List(
+        title=_(u"Origin"),
+        required=False,
+        value_type=schema.Choice(
+            vocabulary='origin',
+        )
+    )
+
+    form = schema.TextLine(
+        title=_(u"Form Number"),
         required=False,
     )
 
@@ -41,44 +54,32 @@ class IDiary(form.Schema):
         )
     )
 
-    logistics = RichText(
-        title=_(u"Logistics"),
+    description = schema.Text(
+        title=_(u"Issue"),
         required=False,
     )
 
-    security = RichText(
-        title=_(u"Security"),
+    body = RichText(
+        title=_(u"Process"),
         required=False,
     )
 
-    maintain = RichText(
-        title=_(u"Maintain"),
+    track = schema.Choice(
+        title=_(u"Track"),
+        required=False,
+        vocabulary='track',
+    )
+
+    done = schema.Date(
+        title=_(u"Done Date"),
         required=False,
     )
 
-    hallwork = RichText(
-        title=_(u"HallWork"),
+    in_charge = schema.Tuple(
+        title=_(u"Persons in Charge"),
         required=False,
-    )
-
-    cleaning = RichText(
-        title=_(u"Cleaning"),
-        required=False,
-    )
-
-    absence = RichText(
-        title=_(u"Absence"),
-        required=False,
-    )
-
-    comment = RichText(
-        title=_(u"Comment"),
-        required=False,
-    )
-
-    residence = RichText(
-        title=_(u"Residence"),
-        required=False,
+        value_type=schema.TextLine(),
+        missing_value=(),
     )
 
     note = RichText(
@@ -86,21 +87,20 @@ class IDiary(form.Schema):
         required=False,
     )
 
-
 # Custom content-type class; objects created for this content type will
 # be instances of this class. Use this class to add content-type specific
 # methods and properties. Put methods that are mainly useful for rendering
 # in separate view classes.
 
-class Diary(Item):
-    grok.implements(IDiary)
+class Issue(dexterity.Container):
+    grok.implements(IIssue)
     
     # Add your class methods and properties here
 
 
 # View class
 # The view will automatically use a similarly named template in
-# diary_templates.
+# issue_templates.
 # Template filenames should be all lower case.
 # The view will render when you request a content object with this
 # interface with "/@@sampleview" appended.
@@ -109,16 +109,16 @@ class Diary(Item):
 # changing the view class name and template filename to View / view.pt.
 
 class View(grok.View):
-    grok.context(IDiary)
+    grok.context(IIssue)
     grok.require('zope2.View')
     grok.name('view')
 
-    def t_title(self, value):
-        if value in ('GW', 'SW', 'WK', 'HB', 'AQ'):
-            factory = getUtility(IVocabularyFactory, 'duty')
+    def t_title(self, vocab, value):
+        try:
+            factory = getUtility(IVocabularyFactory, vocab)
             vocabulary = factory(self.context)
             term = vocabulary.getTerm(value)
             return term.title
-        else:
+        except:
             return None
 
