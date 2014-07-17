@@ -34,6 +34,17 @@ class IIssue(form.Schema):
         required=False,
     )
 
+    category = schema.Choice(
+        title=_(u"Category"),
+        required=False,
+        vocabulary='category',
+    )
+
+    meet = schema.TextLine(
+        title=_(u"Meet"),
+        required=False,
+    )
+
     origin = schema.List(
         title=_(u"Origin"),
         required=False,

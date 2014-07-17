@@ -19,4 +19,9 @@
     component=".vocabularies.TrackFactory"
     provides="zope.schema.interfaces.IVocabularyFactory" />
 
+  <utility
+    name="category"
+    component=".vocabularies.CategoryFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
 </configure>

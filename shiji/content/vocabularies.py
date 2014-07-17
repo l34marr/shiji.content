@@ -47,3 +47,15 @@ class Track(object):
         return SimpleVocabulary(items)
 TrackFactory = Track()
 
+class Category(object):
+    """Category Vocabulary
+    """
+    implements(IVocabularyFactory)
+    def __call__(self, context=None):
+        items = (
+            SimpleTerm(value='execute', title=u'會議會議決議案執行情形'),
+            SimpleTerm(value='maintain', title=u'會館工務修繕'),
+            SimpleTerm(value='track', title=u'意見反映處理'),
+        )
+        return SimpleVocabulary(items)
+CategoryFactory = Category()

@@ -101,7 +101,7 @@ msgstr "會館工作事項"
 #: ./issue.py:58
 #: ./profiles/default/types/Issue.xml
 msgid "Issue"
-msgstr "建議"
+msgstr "社區事務處理"
 
 #: ./bulletin.py:35
 msgid "J"
