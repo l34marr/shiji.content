@@ -14,6 +14,14 @@
   <label i18n:translate="">Spot Date</label>:
   <span tal:replace="context/spot" />
 </div>
+<div tal:condition="context/category">
+  <label i18n:translate="">Category</label>:
+  <span tal:replace="python:view.t_title('category',context.category)" />
+</div>
+<div tal:condition="context/meet">
+  <label i18n:translate="">Meet</label>:
+  <span tal:replace="context/meet" />
+</div>
 <div tal:condition="context/origin">
   <label i18n:translate="">Origin</label>:
   <tal:origin repeat="o context/origin">
