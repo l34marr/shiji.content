@@ -21,7 +21,7 @@
 
   <utility
     name="category"
-    component=".vocabularies.TrackFactory"
+    component=".vocabularies.CategoryFactory"
     provides="zope.schema.interfaces.IVocabularyFactory" />
 
 </configure>

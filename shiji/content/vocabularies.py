@@ -58,4 +58,4 @@ class Category(object):
             SimpleTerm(value='track', title=u'意見反映處理'),
         )
         return SimpleVocabulary(items)
-TrackFactory = Category()
+CategoryFactory = Category()
