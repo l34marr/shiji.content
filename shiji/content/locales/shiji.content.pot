@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2014-07-16 09:03+0000\n"
+"POT-Creation-Date: 2014-07-18 07:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,7 @@ msgstr ""
 msgid "Area"
 msgstr ""
 
-#: ./issue_templates/view.pt:36
+#: ./issue_templates/view.pt:44
 msgid "Body"
 msgstr ""
 
@@ -42,6 +42,11 @@ msgstr ""
 
 #: ./profiles/default/types/Bulletin.xml
 msgid "Bulletin"
+msgstr ""
+
+#: ./issue.py:38
+#: ./issue_templates/view.pt:18
+msgid "Category"
 msgstr ""
 
 #: ./diary.py:65
@@ -63,8 +68,8 @@ msgstr ""
 msgid "Diary"
 msgstr ""
 
-#: ./issue.py:74
-#: ./issue_templates/view.pt:44
+#: ./issue.py:86
+#: ./issue_templates/view.pt:52
 msgid "Done Date"
 msgstr ""
 
@@ -83,8 +88,8 @@ msgstr ""
 msgid "File"
 msgstr ""
 
-#: ./issue.py:45
-#: ./issue_templates/view.pt:25
+#: ./issue.py:57
+#: ./issue_templates/view.pt:33
 msgid "Form Number"
 msgstr ""
 
@@ -101,7 +106,7 @@ msgstr ""
 msgid "HallWork"
 msgstr ""
 
-#: ./issue.py:58
+#: ./issue.py:70
 #: ./profiles/default/types/Issue.xml
 msgid "Issue"
 msgstr ""
@@ -132,6 +137,11 @@ msgstr ""
 msgid "Maintain"
 msgstr ""
 
+#: ./issue.py:44
+#: ./issue_templates/view.pt:22
+msgid "Meet"
+msgstr ""
+
 #: ./bulletin.py:39
 msgid "N"
 msgstr ""
@@ -146,8 +156,8 @@ msgstr ""
 msgid "O"
 msgstr ""
 
-#: ./issue.py:37
-#: ./issue_templates/view.pt:18
+#: ./issue.py:49
+#: ./issue_templates/view.pt:26
 msgid "Origin"
 msgstr ""
 
@@ -155,12 +165,12 @@ msgstr ""
 msgid "P"
 msgstr ""
 
-#: ./issue.py:79
-#: ./issue_templates/view.pt:48
+#: ./issue.py:91
+#: ./issue_templates/view.pt:56
 msgid "Persons in Charge"
 msgstr ""
 
-#: ./issue.py:63
+#: ./issue.py:75
 msgid "Process"
 msgstr ""
 
@@ -198,7 +208,7 @@ msgstr ""
 msgid "ShiJi Issue Type"
 msgstr ""
 
-#: ./issue.py:32
+#: ./issue.py:33
 #: ./issue_templates/view.pt:14
 msgid "Spot Date"
 msgstr ""
@@ -209,12 +219,12 @@ msgid "Start Date"
 msgstr ""
 
 #: ./diary.py:28
-#: ./issue.py:28
+#: ./issue.py:29
 msgid "Title"
 msgstr ""
 
-#: ./issue.py:68
-#: ./issue_templates/view.pt:40
+#: ./issue.py:80
+#: ./issue_templates/view.pt:48
 msgid "Track"
 msgstr ""
 
