@@ -44,7 +44,7 @@ msgstr "公告"
 #: ./issue.py:38
 #: ./issue_templates/view.pt:18
 msgid "Category"
-msgstr ""
+msgstr "事務類別"
 
 #: ./diary.py:65
 #: ./diary_templates/view.pt:61
@@ -137,7 +137,7 @@ msgstr "(工務、環保) 公設維護缺失報修項目"
 #: ./issue.py:44
 #: ./issue_templates/view.pt:22
 msgid "Meet"
-msgstr ""
+msgstr "會議名稱"
 
 #: ./bulletin.py:39
 msgid "N"
