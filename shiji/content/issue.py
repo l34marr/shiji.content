@@ -34,6 +34,7 @@ class IIssue(form.Schema):
         required=False,
     )
 
+    form.widget(category=RadioFieldWidget)
     category = schema.Choice(
         title=_(u"Category"),
         required=False,
@@ -76,6 +77,7 @@ class IIssue(form.Schema):
         required=False,
     )
 
+    form.widget(track=RadioFieldWidget)
     track = schema.Choice(
         title=_(u"Track"),
         required=False,
