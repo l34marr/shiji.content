@@ -4,6 +4,7 @@ from plone.dexterity.content import Item
 
 from zope import schema
 from plone.app.textfield import RichText
+from z3c.form.browser.radio import RadioFieldWidget
 from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
 from zope.component import getUtility
 from zope.schema.interfaces import IVocabularyFactory
@@ -54,8 +55,8 @@ class IIssue(form.Schema):
         )
     )
 
-    form = schema.TextLine(
-        title=_(u"Form Number"),
+    sheet = schema.TextLine(
+        title=_(u"Sheet Number"),
         required=False,
     )
 

@@ -29,9 +29,9 @@
   <span class="separator" tal:condition="not: repeat/o/end">,</span> 
   </tal:origin>
 </div>
-<div tal:condition="context/form">
-  <label i18n:translate="">Form Number</label>:
-  <span tal:replace="context/form" />
+<div tal:condition="context/sheet">
+  <label i18n:translate="">Sheet Number</label>:
+  <span tal:replace="context/sheet" />
 </div>
 <div tal:condition="context/duty">
   <label i18n:translate="">Duty</label>:

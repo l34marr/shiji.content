@@ -52,7 +52,7 @@ class Origin(object):
     implements(IVocabularyFactory)
     def __call__(self, context=None):
         items = (
-            SimpleTerm(value='form', title=_(u'Form')),
+            SimpleTerm(value='sheet', title=_(u'Sheet')),
             SimpleTerm(value='app', title=_(u'APP')),
             SimpleTerm(value='oral', title=_(u'Oral')),
         )
