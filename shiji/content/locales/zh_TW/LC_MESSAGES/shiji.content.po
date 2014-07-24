@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: shiji.content\n"
-"POT-Creation-Date: 2014-07-18 07:30+0000\n"
-"PO-Revision-Date: 2014-07-18 15:31+0800\n"
+"POT-Creation-Date: 2014-07-24 13:55+0000\n"
+"PO-Revision-Date: 2014-07-24 21:56+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -14,6 +14,10 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: shiji.content\n"
 
+#: ./vocabularies.py:56
+msgid "APP"
+msgstr "APP"
+
 #: ./vocabularies.py:20
 msgid "AQ"
 msgstr "安全"
@@ -23,7 +27,7 @@ msgstr "安全"
 msgid "Absence"
 msgstr "出缺勤情況"
 
-#: ./bulletin.py:78
+#: ./bulletin.py:62
 #: ./bulletin_templates/view.pt:35
 msgid "Area"
 msgstr "區域"
@@ -32,7 +36,7 @@ msgstr "區域"
 msgid "Body"
 msgstr "說明內容"
 
-#: ./bulletin.py:86
+#: ./bulletin.py:70
 #: ./bulletin_templates/view.pt:43
 msgid "Building"
 msgstr "棟別"
@@ -41,7 +45,7 @@ msgstr "棟別"
 msgid "Bulletin"
 msgstr "公告"
 
-#: ./issue.py:38
+#: ./issue.py:40
 #: ./issue_templates/view.pt:18
 msgid "Category"
 msgstr "事務類別"
@@ -65,30 +69,37 @@ msgstr "日期"
 msgid "Diary"
 msgstr "日誌"
 
-#: ./issue.py:86
+#: ./issue.py:89
 #: ./issue_templates/view.pt:52
 msgid "Done Date"
 msgstr "確認解除列管之日期"
 
-#: ./bulletin.py:70
+#: ./bulletin.py:54
 #: ./bulletin_templates/view.pt:27
 #: ./diary.py:37
 msgid "Duty"
 msgstr "權責"
 
-#: ./bulletin.py:65
+#: ./vocabularies.py:36
+msgid "ETYLS"
+msgstr "兒童閱覽室"
+
+#: ./vocabularies.py:35
+msgid "ETYXQ"
+msgstr "兒童遊戲區"
+
+#: ./vocabularies.py:34
+msgid "ETYXS"
+msgstr "兒童遊戲室"
+
+#: ./bulletin.py:49
 #: ./bulletin_templates/view.pt:22
 msgid "End Date"
 msgstr "結束日期"
 
-#: ./bulletin.py:105
+#: ./bulletin.py:89
 msgid "File"
 msgstr "檔案"
-
-#: ./issue.py:57
-#: ./issue_templates/view.pt:33
-msgid "Form Number"
-msgstr "意見反應單編號"
 
 #: ./vocabularies.py:16
 msgid "GW"
@@ -103,20 +114,32 @@ msgstr "環保"
 msgid "HallWork"
 msgstr "會館工作事項"
 
-#: ./issue.py:70
+#: ./issue.py:72
 #: ./profiles/default/types/Issue.xml
 msgid "Issue"
 msgstr "社區事務處理"
 
-#: ./bulletin.py:35
+#: ./bulletin.py:19
 msgid "J"
 msgstr ""
 
-#: ./bulletin.py:36
+#: ./vocabularies.py:39
+msgid "JSF"
+msgstr "健身房"
+
+#: ./vocabularies.py:33
+msgid "JYT"
+msgstr "交誼廳"
+
+#: ./bulletin.py:20
 msgid "K"
 msgstr ""
 
-#: ./bulletin.py:37
+#: ./vocabularies.py:31
+msgid "KTV"
+msgstr "KTV"
+
+#: ./bulletin.py:21
 msgid "L"
 msgstr ""
 
@@ -125,7 +148,7 @@ msgstr ""
 msgid "Logistics"
 msgstr "物管工作事項"
 
-#: ./bulletin.py:38
+#: ./bulletin.py:22
 msgid "M"
 msgstr ""
 
@@ -134,44 +157,48 @@ msgstr ""
 msgid "Maintain"
 msgstr "(工務、環保) 公設維護缺失報修項目"
 
-#: ./issue.py:44
+#: ./issue.py:46
 #: ./issue_templates/view.pt:22
 msgid "Meet"
 msgstr "會議名稱"
 
-#: ./bulletin.py:39
+#: ./bulletin.py:23
 msgid "N"
 msgstr ""
 
-#: ./bulletin.py:94
+#: ./bulletin.py:78
 #: ./bulletin_templates/view.pt:51
 #: ./diary.py:85
 msgid "Note"
 msgstr "備註"
 
-#: ./bulletin.py:40
+#: ./bulletin.py:24
 msgid "O"
 msgstr ""
 
-#: ./issue.py:49
+#: ./vocabularies.py:57
+msgid "Oral"
+msgstr "口頭反應"
+
+#: ./issue.py:51
 #: ./issue_templates/view.pt:26
 msgid "Origin"
 msgstr "意見反映來源"
 
-#: ./bulletin.py:41
+#: ./bulletin.py:25
 msgid "P"
 msgstr ""
 
-#: ./issue.py:91
+#: ./issue.py:94
 #: ./issue_templates/view.pt:56
 msgid "Persons in Charge"
 msgstr "確認解除列管之權責委員"
 
-#: ./issue.py:75
+#: ./issue.py:77
 msgid "Process"
 msgstr "處理情形"
 
-#: ./bulletin.py:42
+#: ./bulletin.py:26
 msgid "Q"
 msgstr ""
 
@@ -180,11 +207,23 @@ msgstr ""
 msgid "Residence"
 msgstr "社區居住現況"
 
+#: ./vocabularies.py:43
+msgid "SNOOKER"
+msgstr "撞球室"
+
+#: ./vocabularies.py:41
+msgid "STS"
+msgstr "視聽室"
+
 #: ./vocabularies.py:17
 msgid "SW"
 msgstr "事務"
 
-#: ./bulletin.py:99
+#: ./vocabularies.py:32
+msgid "SWN"
+msgstr "三溫暖"
+
+#: ./bulletin.py:83
 msgid "Searchable Text"
 msgstr "全文檢索文字"
 
@@ -192,6 +231,15 @@ msgstr "全文檢索文字"
 #: ./diary_templates/view.pt:37
 msgid "Security"
 msgstr "保全工作事項"
+
+#: ./vocabularies.py:55
+msgid "Sheet"
+msgstr "意見反應單"
+
+#: ./issue.py:59
+#: ./issue_templates/view.pt:33
+msgid "Sheet Number"
+msgstr "意見反應單編號"
 
 #: ./profiles/default/types/Bulletin.xml
 msgid "ShiJi Bulletin Type"
@@ -205,22 +253,30 @@ msgstr "日誌"
 msgid "ShiJi Issue Type"
 msgstr "建議事項處理表"
 
-#: ./issue.py:33
+#: ./issue.py:34
 #: ./issue_templates/view.pt:14
 msgid "Spot Date"
 msgstr "建檔日期"
 
-#: ./bulletin.py:60
+#: ./bulletin.py:44
 #: ./bulletin_templates/view.pt:17
 msgid "Start Date"
 msgstr "開始日期"
 
+#: ./vocabularies.py:38
+msgid "TBLTNS"
+msgstr "桌球室"
+
+#: ./vocabularies.py:42
+msgid "TSG"
+msgstr "圖書館"
+
 #: ./diary.py:28
-#: ./issue.py:29
+#: ./issue.py:30
 msgid "Title"
 msgstr "標題"
 
-#: ./issue.py:80
+#: ./issue.py:83
 #: ./issue_templates/view.pt:48
 msgid "Track"
 msgstr "列管狀態"
@@ -228,6 +284,18 @@ msgstr "列管狀態"
 #: ./vocabularies.py:18
 msgid "WK"
 msgstr "文康"
+
+#: ./vocabularies.py:37
+msgid "YHT"
+msgstr "宴會廳"
+
+#: ./vocabularies.py:44
+msgid "YLJS"
+msgstr "韻律教室"
+
+#: ./vocabularies.py:40
+msgid "YYC"
+msgstr "游泳池"
 
 #. Default: "File contents"
 #: ./bulletin_templates/view.pt:77
