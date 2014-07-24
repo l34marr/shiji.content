@@ -28,7 +28,7 @@ setup(name='shiji.content',
           'setuptools',
           'plone.app.dexterity [grok]',
           'plone.namedfile [blobs]',
-          # -*- Extra requirements: -*-
+          'collective.dexteritytextindexer'
       ],
       entry_points="""
       # -*- Entry points: -*-

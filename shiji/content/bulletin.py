@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 from five import grok
 from plone.directives import form
 from plone.dexterity.content import Item
@@ -11,6 +9,8 @@ from plone.namedfile.field import NamedBlobFile
 from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
 from zope.component import getUtility
 from zope.schema.interfaces import IVocabularyFactory
+
+from collective import dexteritytextindexer
 
 from shiji.content import MessageFactory as _
 
@@ -79,6 +79,7 @@ class IBulletin(form.Schema):
         required=False,
     )
 
+    dexteritytextindexer.searchable('searchable')
     searchable = schema.Text(
         title=_(u"Searchable Text"),
         required=False,

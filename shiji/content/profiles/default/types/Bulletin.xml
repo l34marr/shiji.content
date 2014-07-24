@@ -30,6 +30,7 @@
     <element value="plone.app.relationfield.behavior.IRelatedItems" />
     <!-- IReferenceable might not be available, but it will not break. -->
     <element value="plone.app.referenceablebehavior.referenceable.IReferenceable" />
+    <element value="collective.dexteritytextindexer.behavior.IDexterityTextIndexer" />
   </property>
 
   <!-- View information -->
