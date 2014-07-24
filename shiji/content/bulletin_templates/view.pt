@@ -26,7 +26,7 @@
 <div tal:condition="context/duty">
   <label i18n:translate="">Duty</label>:
   <tal:duty repeat="d context/duty">
-  <span tal:replace="python:view.t_title(d)" />
+  <span tal:replace="python:view.t_title('duty',d)" />
   <span class="separator" tal:condition="not: repeat/d/end">,</span>
   </tal:duty>
 </div>
@@ -34,7 +34,7 @@
 <div tal:condition="context/area">
   <label i18n:translate="">Area</label>:
   <tal:area repeat="a context/area">
-  <span tal:replace="a" />
+  <span tal:replace="python:view.t_title('area',a)" />
   <span class="separator" tal:condition="not: repeat/a/end">,</span>
   </tal:area>
 </div>

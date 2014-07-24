@@ -22,15 +22,39 @@ class Duty(object):
         return SimpleVocabulary(items)
 DutyFactory = Duty()
 
+class Area(object):
+    """Area Vocabulary
+    """
+    implements(IVocabularyFactory)
+    def __call__(self, context=None):
+        items = (
+            SimpleTerm(value='ktv', title=_(u'KTV')),
+            SimpleTerm(value='swn', title=_(u'SWN')),
+            SimpleTerm(value='jyt', title=_(u'JYT')),
+            SimpleTerm(value='etyxs', title=_(u'ETYXS')),
+            SimpleTerm(value='etyxq', title=_(u'ETYXQ')),
+            SimpleTerm(value='etyls', title=_(u'ETYLS')),
+            SimpleTerm(value='yht', title=_(u'YHT')),
+            SimpleTerm(value='tbltns', title=_(u'TBLTNS')),
+            SimpleTerm(value='jsf', title=_(u'JSF')),
+            SimpleTerm(value='yyc', title=_(u'YYC')),
+            SimpleTerm(value='sts', title=_(u'STS')),
+            SimpleTerm(value='tsg', title=_(u'TSG')),
+            SimpleTerm(value='snooker', title=_(u'SNOOKER')),
+            SimpleTerm(value='yljs', title=_(u'YLJS'))
+        )
+        return SimpleVocabulary(items)
+AreaFactory = Area()
+
 class Origin(object):
     """Origin Vocabulary
     """
     implements(IVocabularyFactory)
     def __call__(self, context=None):
         items = (
-            SimpleTerm(value='form', title=u'意見反應單'),
-            SimpleTerm(value='app', title=u'APP'),
-            SimpleTerm(value='oral', title=u'口頭反應'),
+            SimpleTerm(value='form', title=_(u'Form')),
+            SimpleTerm(value='app', title=_(u'APP')),
+            SimpleTerm(value='oral', title=_(u'Oral')),
         )
         return SimpleVocabulary(items)
 OriginFactory = Origin()
@@ -59,3 +83,4 @@ class Category(object):
         )
         return SimpleVocabulary(items)
 CategoryFactory = Category()
+

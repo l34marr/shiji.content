@@ -14,22 +14,6 @@ from zope.schema.interfaces import IVocabularyFactory
 
 from shiji.content import MessageFactory as _
 
-area = SimpleVocabulary([
-    SimpleTerm(value=u'KTV', token='ktv', title=u'KTV'),
-    SimpleTerm(value=u'\u4e09\u6eab\u6696', token='swn', title=u'\u4e09\u6eab\u6696'),
-    SimpleTerm(value=u'\u4ea4\u8abc\u5ef3', token='jyt', title=u'\u4ea4\u8abc\u5ef3'),
-    SimpleTerm(value=u'\u5152\u7ae5\u904a\u6232\u5ba4', token='etyxs',title=u'\u5152\u7ae5\u904a\u6232\u5ba4'),
-    SimpleTerm(value=u'\u5152\u7ae5\u904a\u6232\u5340', token='etyxq',title=u'\u5152\u7ae5\u904a\u6232\u5340'),
-    SimpleTerm(value=u'\u5152\u7ae5\u95b1\u89bd\u5ba4', token='etyls',title=u'\u5152\u7ae5\u95b1\u89bd\u5ba4'),
-    SimpleTerm(value=u'\u5bb4\u6703\u5ef3', token='yht', title=u'\u5bb4\u6703\u5ef3'),
-    SimpleTerm(value=u'\u684c\u7403\u5ba4', token='tbltns', title=u'\u684c\u7403\u5ba4'),
-    SimpleTerm(value=u'\u5065\u8eab\u623f', token='jsf', title=u'\u5065\u8eab\u623f'),
-    SimpleTerm(value=u'\u6e38\u6cf3\u6c60', token='yyc', title=u'\u6e38\u6cf3\u6c60'),
-    SimpleTerm(value=u'\u8996\u807d\u5ba4', token='sts', title=u'\u8996\u807d\u5ba4'),
-    SimpleTerm(value=u'\u5716\u66f8\u9928', token='tsg', title=u'\u5716\u66f8\u9928'),
-    SimpleTerm(value=u'\u649e\u7403\u5ba4', token='snooker', title=u'\u649e\u7403\u5ba4'),
-    SimpleTerm(value=u'\u97fb\u5f8b\u6559\u5ba4', token='yljs', title=u'\u97fb\u5f8b\u6559\u5ba4'),
-])
 
 building = SimpleVocabulary([
     SimpleTerm(value='J', title=_(u'J')),
@@ -78,7 +62,7 @@ class IBulletin(form.Schema):
         title=_(u"Area"),
         required=False,
         value_type=schema.Choice(
-            vocabulary=area,
+            vocabulary='area',
         )
     )
 
@@ -132,12 +116,12 @@ class View(grok.View):
     grok.require('zope2.View')
     grok.name('view')
 
-    def t_title(self, value):
-        if value in ('GW', 'SW', 'WK', 'HB', 'AQ'):
-            factory = getUtility(IVocabularyFactory, 'duty')
+    def t_title(self, vocab, value):
+        try:
+            factory = getUtility(IVocabularyFactory, vocab)
             vocabulary = factory(self.context)
             term = vocabulary.getTerm(value)
             return term.title
-        else:
+        except:
             return None
 

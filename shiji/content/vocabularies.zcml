@@ -10,6 +10,11 @@
     provides="zope.schema.interfaces.IVocabularyFactory" />
 
   <utility
+    name="area"
+    component=".vocabularies.AreaFactory"
+    provides="zope.schema.interfaces.IVocabularyFactory" />
+
+  <utility
     name="origin"
     component=".vocabularies.OriginFactory"
     provides="zope.schema.interfaces.IVocabularyFactory" />
