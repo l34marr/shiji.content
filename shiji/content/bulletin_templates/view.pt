@@ -10,7 +10,6 @@
 <metal:main fill-slot="content-core">
   <metal:content-core define-macro="content-core"
    tal:define="content_type context/file/contentType|nothing;
-               location string:${context/absolute_url}/@@download/file/${context/file/filename};
                v python:context.restrictedTraverse('contenttype_utils');">
 
 <div tal:condition="context/date">
@@ -52,6 +51,7 @@
   <span tal:replace="structure context/note/output" />
 </div>
 
+<tal:file condition="context/file">
 <p>
   <a tal:attributes="href string:${context/absolute_url}/@@download/file/${context/file/filename}">
     <img tal:attributes="src python: v.getMimeTypeIcon(context.file);
@@ -64,16 +64,20 @@
    &mdash; <span tal:replace="kb" /> KB</span>
 </p>
 
+<!--
 <object class="viewembededfile" type="application/pdf" data=""
  tal:condition="python:content_type.endswith('pdf')"
+ tal:define="location string:${context/absolute_url}/@@download/file/${context/file/filename}"
  tal:attributes="data context/absolute_url; width string:100%; height string:900">
   <a href="" tal:attributes="href location">Please click here to download the PDF.</a>
   <embed src="" class="viewembededfile" type="application/pdf"
    tal:attributes="src context/absolute_url">
   </embed>
 </object>
+-->
+</tal:file>
 
-<div tal:condition="python: content_type.startswith('text')">
+<div tal:condition="python: content_type and content_type.startswith('text')">
   <h2 i18n:translate="heading_file_contents">File contents</h2>
   <pre tal:content="context/file/data|nothing" />
 </div>
