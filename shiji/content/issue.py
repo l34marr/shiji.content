@@ -42,7 +42,7 @@ class IIssue(form.Schema):
         vocabulary='category',
     )
 
-    meet = schema.TextLine(
+    description = schema.Text(
         title=_(u"Meet"),
         required=False,
     )
@@ -66,11 +66,6 @@ class IIssue(form.Schema):
         value_type=schema.Choice(
             vocabulary='duty',
         )
-    )
-
-    description = schema.Text(
-        title=_(u"Issue"),
-        required=False,
     )
 
     body = RichText(

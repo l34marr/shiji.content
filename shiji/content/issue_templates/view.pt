@@ -18,9 +18,9 @@
   <label i18n:translate="">Category</label>:
   <span tal:replace="python:view.t_title('category',context.category)" />
 </div>
-<div tal:condition="context/meet">
+<div tal:condition="context/description">
   <label i18n:translate="">Meet</label>:
-  <span tal:replace="context/meet" />
+  <span tal:replace="context/description" />
 </div>
 <div tal:condition="context/origin">
   <label i18n:translate="">Origin</label>:
