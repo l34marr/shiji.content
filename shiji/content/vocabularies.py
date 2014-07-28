@@ -17,7 +17,8 @@ class Duty(object):
             SimpleTerm(value='SW', title=_(u'SW')),
             SimpleTerm(value='WK', title=_(u'WK')),
             SimpleTerm(value='HB', title=_(u'HB')),
-            SimpleTerm(value='AQ', title=_(u'AQ'))
+            SimpleTerm(value='AQ', title=_(u'AQ')),
+            SimpleTerm(value='CW', title=_(u'CW'))
         )
         return SimpleVocabulary(items)
 DutyFactory = Duty()
@@ -78,7 +79,7 @@ class Category(object):
     implements(IVocabularyFactory)
     def __call__(self, context=None):
         items = (
-            SimpleTerm(value='execute', title=u'會議會議決議案執行情形'),
+            SimpleTerm(value='execute', title=u'會議決議案執行情形'),
             SimpleTerm(value='maintain', title=u'會館工務修繕'),
             SimpleTerm(value='track', title=u'意見反映處理'),
         )

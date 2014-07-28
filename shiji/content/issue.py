@@ -68,6 +68,14 @@ class IIssue(form.Schema):
         )
     )
 
+    area = schema.List(
+        title=_(u"Area"),
+        required=False,
+        value_type=schema.Choice(
+            vocabulary='area',
+        )
+    )
+
     body = RichText(
         title=_(u"Process"),
         required=False,
