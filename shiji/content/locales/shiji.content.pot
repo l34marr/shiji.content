@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2014-07-24 13:55+0000\n"
+"POT-Creation-Date: 2014-07-28 06:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: shiji.content\n"
 
-#: ./vocabularies.py:56
+#: ./vocabularies.py:57
 msgid "APP"
 msgstr ""
 
@@ -31,7 +31,7 @@ msgid "Absence"
 msgstr ""
 
 #: ./bulletin.py:62
-#: ./bulletin_templates/view.pt:35
+#: ./bulletin_templates/view.pt:34
 msgid "Area"
 msgstr ""
 
@@ -40,7 +40,7 @@ msgid "Body"
 msgstr ""
 
 #: ./bulletin.py:70
-#: ./bulletin_templates/view.pt:43
+#: ./bulletin_templates/view.pt:42
 msgid "Building"
 msgstr ""
 
@@ -72,13 +72,13 @@ msgstr ""
 msgid "Diary"
 msgstr ""
 
-#: ./issue.py:89
+#: ./issue.py:84
 #: ./issue_templates/view.pt:52
 msgid "Done Date"
 msgstr ""
 
 #: ./bulletin.py:54
-#: ./bulletin_templates/view.pt:27
+#: ./bulletin_templates/view.pt:26
 #: ./diary.py:37
 msgid "Duty"
 msgstr ""
@@ -96,11 +96,11 @@ msgid "ETYXS"
 msgstr ""
 
 #: ./bulletin.py:49
-#: ./bulletin_templates/view.pt:22
+#: ./bulletin_templates/view.pt:21
 msgid "End Date"
 msgstr ""
 
-#: ./bulletin.py:89
+#: ./bulletin.py:90
 msgid "File"
 msgstr ""
 
@@ -117,7 +117,6 @@ msgstr ""
 msgid "HallWork"
 msgstr ""
 
-#: ./issue.py:72
 #: ./profiles/default/types/Issue.xml
 msgid "Issue"
 msgstr ""
@@ -146,6 +145,10 @@ msgstr ""
 msgid "L"
 msgstr ""
 
+#: ./vocabularies.py:45
+msgid "LCYXJ"
+msgstr ""
+
 #: ./diary.py:45
 #: ./diary_templates/view.pt:29
 msgid "Logistics"
@@ -170,7 +173,7 @@ msgid "N"
 msgstr ""
 
 #: ./bulletin.py:78
-#: ./bulletin_templates/view.pt:51
+#: ./bulletin_templates/view.pt:50
 #: ./diary.py:85
 msgid "Note"
 msgstr ""
@@ -179,7 +182,7 @@ msgstr ""
 msgid "O"
 msgstr ""
 
-#: ./vocabularies.py:57
+#: ./vocabularies.py:58
 msgid "Oral"
 msgstr ""
 
@@ -192,12 +195,12 @@ msgstr ""
 msgid "P"
 msgstr ""
 
-#: ./issue.py:94
+#: ./issue.py:89
 #: ./issue_templates/view.pt:56
 msgid "Persons in Charge"
 msgstr ""
 
-#: ./issue.py:77
+#: ./issue.py:72
 msgid "Process"
 msgstr ""
 
@@ -226,7 +229,7 @@ msgstr ""
 msgid "SWN"
 msgstr ""
 
-#: ./bulletin.py:83
+#: ./bulletin.py:84
 msgid "Searchable Text"
 msgstr ""
 
@@ -235,7 +238,7 @@ msgstr ""
 msgid "Security"
 msgstr ""
 
-#: ./vocabularies.py:55
+#: ./vocabularies.py:56
 msgid "Sheet"
 msgstr ""
 
@@ -262,7 +265,7 @@ msgid "Spot Date"
 msgstr ""
 
 #: ./bulletin.py:44
-#: ./bulletin_templates/view.pt:17
+#: ./bulletin_templates/view.pt:16
 msgid "Start Date"
 msgstr ""
 
@@ -279,7 +282,7 @@ msgstr ""
 msgid "Title"
 msgstr ""
 
-#: ./issue.py:83
+#: ./issue.py:78
 #: ./issue_templates/view.pt:48
 msgid "Track"
 msgstr ""
@@ -301,7 +304,7 @@ msgid "YYC"
 msgstr ""
 
 #. Default: "File contents"
-#: ./bulletin_templates/view.pt:77
+#: ./bulletin_templates/view.pt:81
 msgid "heading_file_contents"
 msgstr ""
 
