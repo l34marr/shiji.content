@@ -42,6 +42,7 @@ class Area(object):
             SimpleTerm(value='tsg', title=_(u'TSG')),
             SimpleTerm(value='snooker', title=_(u'SNOOKER')),
             SimpleTerm(value='yljs', title=_(u'YLJS'))
+            SimpleTerm(value='lcyxj', title=_(u'LCYXJ'))
         )
         return SimpleVocabulary(items)
 AreaFactory = Area()
