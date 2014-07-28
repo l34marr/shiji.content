@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2014-07-28 06:03+0000\n"
+"POT-Creation-Date: 2014-07-28 09:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: shiji.content\n"
 
-#: ./vocabularies.py:57
+#: ./vocabularies.py:58
 msgid "APP"
 msgstr ""
 
@@ -32,6 +32,7 @@ msgstr ""
 
 #: ./bulletin.py:62
 #: ./bulletin_templates/view.pt:34
+#: ./issue.py:72
 msgid "Area"
 msgstr ""
 
@@ -46,6 +47,10 @@ msgstr ""
 
 #: ./profiles/default/types/Bulletin.xml
 msgid "Bulletin"
+msgstr ""
+
+#: ./vocabularies.py:21
+msgid "CW"
 msgstr ""
 
 #: ./issue.py:40
@@ -72,7 +77,7 @@ msgstr ""
 msgid "Diary"
 msgstr ""
 
-#: ./issue.py:84
+#: ./issue.py:92
 #: ./issue_templates/view.pt:52
 msgid "Done Date"
 msgstr ""
@@ -83,15 +88,15 @@ msgstr ""
 msgid "Duty"
 msgstr ""
 
-#: ./vocabularies.py:36
+#: ./vocabularies.py:37
 msgid "ETYLS"
 msgstr ""
 
-#: ./vocabularies.py:35
+#: ./vocabularies.py:36
 msgid "ETYXQ"
 msgstr ""
 
-#: ./vocabularies.py:34
+#: ./vocabularies.py:35
 msgid "ETYXS"
 msgstr ""
 
@@ -125,11 +130,11 @@ msgstr ""
 msgid "J"
 msgstr ""
 
-#: ./vocabularies.py:39
+#: ./vocabularies.py:40
 msgid "JSF"
 msgstr ""
 
-#: ./vocabularies.py:33
+#: ./vocabularies.py:34
 msgid "JYT"
 msgstr ""
 
@@ -137,7 +142,7 @@ msgstr ""
 msgid "K"
 msgstr ""
 
-#: ./vocabularies.py:31
+#: ./vocabularies.py:32
 msgid "KTV"
 msgstr ""
 
@@ -145,7 +150,7 @@ msgstr ""
 msgid "L"
 msgstr ""
 
-#: ./vocabularies.py:45
+#: ./vocabularies.py:46
 msgid "LCYXJ"
 msgstr ""
 
@@ -182,7 +187,7 @@ msgstr ""
 msgid "O"
 msgstr ""
 
-#: ./vocabularies.py:58
+#: ./vocabularies.py:59
 msgid "Oral"
 msgstr ""
 
@@ -195,12 +200,12 @@ msgstr ""
 msgid "P"
 msgstr ""
 
-#: ./issue.py:89
+#: ./issue.py:97
 #: ./issue_templates/view.pt:56
 msgid "Persons in Charge"
 msgstr ""
 
-#: ./issue.py:72
+#: ./issue.py:80
 msgid "Process"
 msgstr ""
 
@@ -213,11 +218,11 @@ msgstr ""
 msgid "Residence"
 msgstr ""
 
-#: ./vocabularies.py:43
+#: ./vocabularies.py:44
 msgid "SNOOKER"
 msgstr ""
 
-#: ./vocabularies.py:41
+#: ./vocabularies.py:42
 msgid "STS"
 msgstr ""
 
@@ -225,7 +230,7 @@ msgstr ""
 msgid "SW"
 msgstr ""
 
-#: ./vocabularies.py:32
+#: ./vocabularies.py:33
 msgid "SWN"
 msgstr ""
 
@@ -238,7 +243,7 @@ msgstr ""
 msgid "Security"
 msgstr ""
 
-#: ./vocabularies.py:56
+#: ./vocabularies.py:57
 msgid "Sheet"
 msgstr ""
 
@@ -269,11 +274,11 @@ msgstr ""
 msgid "Start Date"
 msgstr ""
 
-#: ./vocabularies.py:38
+#: ./vocabularies.py:39
 msgid "TBLTNS"
 msgstr ""
 
-#: ./vocabularies.py:42
+#: ./vocabularies.py:43
 msgid "TSG"
 msgstr ""
 
@@ -282,7 +287,7 @@ msgstr ""
 msgid "Title"
 msgstr ""
 
-#: ./issue.py:78
+#: ./issue.py:86
 #: ./issue_templates/view.pt:48
 msgid "Track"
 msgstr ""
@@ -291,15 +296,15 @@ msgstr ""
 msgid "WK"
 msgstr ""
 
-#: ./vocabularies.py:37
+#: ./vocabularies.py:38
 msgid "YHT"
 msgstr ""
 
-#: ./vocabularies.py:44
+#: ./vocabularies.py:45
 msgid "YLJS"
 msgstr ""
 
-#: ./vocabularies.py:40
+#: ./vocabularies.py:41
 msgid "YYC"
 msgstr ""
 

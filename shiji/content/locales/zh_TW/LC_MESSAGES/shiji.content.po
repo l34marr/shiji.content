@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: shiji.content\n"
-"POT-Creation-Date: 2014-07-28 06:03+0000\n"
-"PO-Revision-Date: 2014-07-28 14:04+0800\n"
+"POT-Creation-Date: 2014-07-28 09:02+0000\n"
+"PO-Revision-Date: 2014-07-28 17:03+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: shiji.content\n"
 
-#: ./vocabularies.py:57
+#: ./vocabularies.py:58
 msgid "APP"
 msgstr "APP"
 
@@ -29,6 +29,7 @@ msgstr "出缺勤情況"
 
 #: ./bulletin.py:62
 #: ./bulletin_templates/view.pt:34
+#: ./issue.py:72
 msgid "Area"
 msgstr "區域"
 
@@ -44,6 +45,10 @@ msgstr "棟別"
 #: ./profiles/default/types/Bulletin.xml
 msgid "Bulletin"
 msgstr "公告"
+
+#: ./vocabularies.py:21
+msgid "CW"
+msgstr "財務"
 
 #: ./issue.py:40
 #: ./issue_templates/view.pt:18
@@ -69,7 +74,7 @@ msgstr "日期"
 msgid "Diary"
 msgstr "日誌"
 
-#: ./issue.py:84
+#: ./issue.py:92
 #: ./issue_templates/view.pt:52
 msgid "Done Date"
 msgstr "確認解除列管之日期"
@@ -80,15 +85,15 @@ msgstr "確認解除列管之日期"
 msgid "Duty"
 msgstr "權責"
 
-#: ./vocabularies.py:36
+#: ./vocabularies.py:37
 msgid "ETYLS"
 msgstr "兒童閱覽室"
 
-#: ./vocabularies.py:35
+#: ./vocabularies.py:36
 msgid "ETYXQ"
 msgstr "兒童遊戲區"
 
-#: ./vocabularies.py:34
+#: ./vocabularies.py:35
 msgid "ETYXS"
 msgstr "兒童遊戲室"
 
@@ -122,11 +127,11 @@ msgstr "社區事務處理"
 msgid "J"
 msgstr ""
 
-#: ./vocabularies.py:39
+#: ./vocabularies.py:40
 msgid "JSF"
 msgstr "健身房"
 
-#: ./vocabularies.py:33
+#: ./vocabularies.py:34
 msgid "JYT"
 msgstr "交誼廳"
 
@@ -134,7 +139,7 @@ msgstr "交誼廳"
 msgid "K"
 msgstr ""
 
-#: ./vocabularies.py:31
+#: ./vocabularies.py:32
 msgid "KTV"
 msgstr "KTV"
 
@@ -142,7 +147,7 @@ msgstr "KTV"
 msgid "L"
 msgstr ""
 
-#: ./vocabularies.py:45
+#: ./vocabularies.py:46
 msgid "LCYXJ"
 msgstr "垃圾冷藏間"
 
@@ -179,7 +184,7 @@ msgstr "備註"
 msgid "O"
 msgstr ""
 
-#: ./vocabularies.py:58
+#: ./vocabularies.py:59
 msgid "Oral"
 msgstr "口頭反應"
 
@@ -192,12 +197,12 @@ msgstr "意見反映來源"
 msgid "P"
 msgstr ""
 
-#: ./issue.py:89
+#: ./issue.py:97
 #: ./issue_templates/view.pt:56
 msgid "Persons in Charge"
 msgstr "確認解除列管之權責委員"
 
-#: ./issue.py:72
+#: ./issue.py:80
 msgid "Process"
 msgstr "處理情形"
 
@@ -210,11 +215,11 @@ msgstr ""
 msgid "Residence"
 msgstr "社區居住現況"
 
-#: ./vocabularies.py:43
+#: ./vocabularies.py:44
 msgid "SNOOKER"
 msgstr "撞球室"
 
-#: ./vocabularies.py:41
+#: ./vocabularies.py:42
 msgid "STS"
 msgstr "視聽室"
 
@@ -222,7 +227,7 @@ msgstr "視聽室"
 msgid "SW"
 msgstr "事務"
 
-#: ./vocabularies.py:32
+#: ./vocabularies.py:33
 msgid "SWN"
 msgstr "三溫暖"
 
@@ -235,7 +240,7 @@ msgstr "全文檢索文字"
 msgid "Security"
 msgstr "保全工作事項"
 
-#: ./vocabularies.py:56
+#: ./vocabularies.py:57
 msgid "Sheet"
 msgstr "意見反應單"
 
@@ -266,11 +271,11 @@ msgstr "建檔日期"
 msgid "Start Date"
 msgstr "開始日期"
 
-#: ./vocabularies.py:38
+#: ./vocabularies.py:39
 msgid "TBLTNS"
 msgstr "桌球室"
 
-#: ./vocabularies.py:42
+#: ./vocabularies.py:43
 msgid "TSG"
 msgstr "圖書館"
 
@@ -279,7 +284,7 @@ msgstr "圖書館"
 msgid "Title"
 msgstr "標題"
 
-#: ./issue.py:78
+#: ./issue.py:86
 #: ./issue_templates/view.pt:48
 msgid "Track"
 msgstr "列管狀態"
@@ -288,15 +293,15 @@ msgstr "列管狀態"
 msgid "WK"
 msgstr "文康"
 
-#: ./vocabularies.py:37
+#: ./vocabularies.py:38
 msgid "YHT"
 msgstr "宴會廳"
 
-#: ./vocabularies.py:44
+#: ./vocabularies.py:45
 msgid "YLJS"
 msgstr "韻律教室"
 
-#: ./vocabularies.py:40
+#: ./vocabularies.py:41
 msgid "YYC"
 msgstr "游泳池"
 
